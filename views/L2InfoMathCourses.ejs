@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bienvenue Sur DocShare</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="/css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="/css/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.rateyo.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/inner-page-style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="shortcut icon" href="/images/education.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="admin/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="admin/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="admin/css/ruang-admin.min.css" rel="stylesheet" />
+    <link
+      href="admin/vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="page"
+      class="site"
+      itemscope
+      itemtype="http://schema.org/LocalBusiness"
+    >
+      <header class="site-header">
+        <div class="top-header">
+          <div class="container">
+            <div class="top-header-left">
+              <div class="top-header-block">
+                <a href="mailto:info@educationpro.com" itemprop="email"
+                  ><i class="fas fa-envelope"></i> info@education.com</a
+                >
+              </div>
+              <div class="top-header-block">
+                <a href="tel:+9779813639131" itemprop="telephone"
+                  ><i class="fas fa-phone"></i> +977 9813639131</a
+                >
+              </div>
+            </div>
+            <div class="top-header-right">
+              <div class="social-block">
+                <ul class="social-list">
+                  <li>
+                    <a href=""><i class="fab fa-viber"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-skype"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="login-block"
+                style="display: flex; transform: translateX(100px)"
+              >
+                <% if(!verifUser){%>
+                <a href="/login" style="font-size: 20px">Login /</a>
+                <a href="/register" style="font-size: 20px">Register</a>
+                <%}else{%>
+                <form
+                  class="form-inline my-2 my-lg-0"
+                  style="margin-left: 50px"
+                  method="POST"
+                  action="/logout"
+                >
+                  <button class="btn btn-danger" type="submit">
+                    <h3>Logout</h3>
+                  </button>
+                </form>
+                <%}%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Top header Close -->
+        <div class="main-header">
+          <div class="container">
+            <div
+              class="logo-wrap"
+              itemprop="logo"
+              style="display: flex; width: 60px; transform: translateX(-100px)"
+            >
+              <img src="images/education.jpg" alt="Logo Image" />
+
+              <h1
+                style="
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  font-size: 50px;
+                  color: black;
+                "
+              >
+                DocShare
+              </h1>
+            </div>
+            <div class="nav-wrap">
+              <nav class="nav-desktop">
+                <ul class="menu-list">
+                  <li><a href="/home">Home</a></li>
+                  <% if(verifUser){%>
+                  <li><a href="/Upload">Upload</a></li>
+                  <li><a href="/MyCourses">My Courses</a></li>
+                  <li><a href="/Nouveauprofil">Creer Profile</a></li>
+                  <%}%>
+                  <li class="menu-parent">
+                    Courses
+                    <ul class="sub-menu">
+                      <li class="menu-parent">
+                        Documents
+                        <ul class="sub-menu">
+                          <li><a href="/ExemensL2infoMath">Exemens</a></li>
+                          <li><a href="/TDL2infoMath">TD</a></li>
+                          <li><a href="/TPL2infoMath">TP</a></li>
+                          <li><a href="/CoursL2InfoMath">Cours</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-menu">
+                        <a href="/imageL2infoMath">images</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="#">About</a></li>
+                  <% if(verifUser){%> <% if(Profil){%>
+                  <li>
+                    <a href="/MyProfil"
+                      ><img
+                        width="50px"
+                        style="
+                          background-color: black;
+                          border-radius: 50%;
+                          height: 40px;
+                        "
+                        src="/uploads/<%= Profil.image%>"
+                      />
+                    </a>
+                  </li>
+                  <%}else{%>
+                  <li>
+                    <a href="#"
+                      ><img
+                        width="50px"
+                        style="background-color: black; border-radius: 50%"
+                        src="/images/image2.jpg"
+                      />
+                    </a>
+                  </li>
+                  <%}%> <%}%>
+                </ul>
+              </nav>
+              <div id="bar">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div id="close">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header Close -->
+    </div>
+  </body>
+</html>
+<%- include("parts/footer.ejs") %>

@@ -1,0 +1,1871 @@
+[{
+  "_id": {
+    "$oid": "628518e18564d247de19c0ad"
+  },
+  "titre": "variantes des listes ",
+  "description": "ce  document est un  cours du module algorithmique qui contient 8 pages presente par monsieur samaili ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-10-03",
+  "nomUser": "berdja maria",
+  "nomFichier": "1652889824953-Variantes_Listes.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628514df8564d247de19c098",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285192a8564d247de19c0b0"
+  },
+  "titre": "schema d'appel",
+  "description": "ce  document est un  cours du module algorithmique qui contient 1 pages presente par monsieur samaili",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-04-13",
+  "nomUser": "berdja maria",
+  "nomFichier": "1652889898585-schema_appel.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628514df8564d247de19c098",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628519808564d247de19c0b3"
+  },
+  "titre": "la récursivité ",
+  "description": "ce  document est un  cours du module algorithmique qui contient 13 pages presente par monsieur samaili",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-27",
+  "nomUser": "berdja maria",
+  "nomFichier": "1652889984452-Récursivite.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628514df8564d247de19c098",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851a0f8564d247de19c0bd"
+  },
+  "titre": "les piles",
+  "description": "ce  document est un  cours du module algorithmique qui contient 11 pages presente par monsieur samaili",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-12-12",
+  "nomUser": "berdja maria",
+  "nomFichier": "1652890127360-Les_Piles.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628514df8564d247de19c098",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851ae18564d247de19c0c5"
+  },
+  "titre": "Les Arbres",
+  "description": "ce  document est un  cours du module algorithmique qui contient 23 pages présenté par monsieur samaili",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-03-31",
+  "nomUser": "berdja maria",
+  "nomFichier": "1652890337826-Les arbres.doc.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628514df8564d247de19c098",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851bc98564d247de19c0d3"
+  },
+  "titre": "Programmation PYTHON Cours 1",
+  "description": "       ce  document est un  cours du module python qui contient 41 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-10",
+  "nomUser": "berdja youcef",
+  "nomFichier": "1652890569201-python-1.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851aff8564d247de19c0c9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851c1c8564d247de19c0d6"
+  },
+  "titre": "Programmation PYTHON Cours 2",
+  "description": "       ce  document est un  cours du module python qui contient 30 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-18",
+  "nomUser": "berdja youcef",
+  "nomFichier": "1652890652494-python-2.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851aff8564d247de19c0c9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851c788564d247de19c0d9"
+  },
+  "titre": "Programmation PYTHON  Cours 3",
+  "description": "       ce  document est un  cours du module python qui contient 48 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-22",
+  "nomUser": "berdja youcef",
+  "nomFichier": "1652890744765-python-3.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851aff8564d247de19c0c9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851cb48564d247de19c0dc"
+  },
+  "titre": "Programmation PYTHON  Cours 4",
+  "description": "              ce  document est un  cours du module python qui contient 20 pages présenté par monsieur zellal\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-25",
+  "nomUser": "berdja youcef",
+  "nomFichier": "1652890804781-python-4.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851aff8564d247de19c0c9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851dad8564d247de19c0f7"
+  },
+  "titre": "Programmation PYTHON  Cours 5",
+  "description": "       ce  document est un  cours du module python qui contient 28 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-28",
+  "nomUser": "nora mecis",
+  "nomFichier": "1652891053900-python-5.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851d0f8564d247de19c0ed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851dfb8564d247de19c0fa"
+  },
+  "titre": "Programmation PYTHON  Cours 6",
+  "description": "       ce  document est un  cours du module python qui contient 24 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-30",
+  "nomUser": "nora mecis",
+  "nomFichier": "1652891131049-python-6.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "62851d0f8564d247de19c0ed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851e528564d247de19c0fd"
+  },
+  "titre": "Programmation PYTHON  Cours 7",
+  "description": "       ce  document est un  cours du module python qui contient 25 pages présenté par monsieur zellal\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-03",
+  "nomUser": "nora mecis",
+  "nomFichier": "1652891218184-python-7.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851d0f8564d247de19c0ed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851e9a8564d247de19c100"
+  },
+  "titre": "Programmation PYTHON  Cours 8",
+  "description": "              ce  document est un  cours du module python qui contient 10 pages présenté par monsieur zellal\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-06-07",
+  "nomUser": "nora mecis",
+  "nomFichier": "1652891290818-python-8.pdf",
+  "module": "python",
+  "typeFichier": "pdf",
+  "UserId": "62851d0f8564d247de19c0ed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851f708564d247de19c114"
+  },
+  "titre": "jeux d'instruction ",
+  "description": "       ce  document est un  cours du module architecture des ordinateurs  qui contient 25 pages présenté par monsieur faradj\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-11",
+  "nomUser": "aymen khoukhi",
+  "nomFichier": "1652891504573-JeuxInst8086.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "62851ebb8564d247de19c108",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851fe58564d247de19c117"
+  },
+  "titre": "Module Introduction aux Systèmes  d’Information",
+  "description": "ce  document est un  cours du module systeme d'information qui contient 10 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-11-15",
+  "nomUser": "aymen khoukhi",
+  "nomFichier": "1652891621207-Introduction 2020 2021.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "62851ebb8564d247de19c108",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628520438564d247de19c11a"
+  },
+  "titre": "les files ",
+  "description": "ce  document est un  cours du module algorithmique qui contient 5 pages présenté par monsieur semailli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-03",
+  "nomUser": "aymen khoukhi",
+  "nomFichier": "1652891715353-Files.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "62851ebb8564d247de19c108",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628520a28564d247de19c11d"
+  },
+  "titre": "explication microprosseur",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 4 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-01-20",
+  "nomUser": "aymen khoukhi",
+  "nomFichier": "1652891810577-ExplicationMicroprocesseur.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "62851ebb8564d247de19c108",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285229b8564d247de19c17f"
+  },
+  "titre": "explication langage assembleur",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 8 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-22",
+  "nomUser": "karim mecis",
+  "nomFichier": "1652892315230-ExplicationLangagesAssembMach.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628521f98564d247de19c175",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628523348564d247de19c182"
+  },
+  "titre": "Introduction aux Systèmes d’Information",
+  "description": "ce  document est un  cours du module SI qui contient19 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-12-17",
+  "nomUser": "karim mecis",
+  "nomFichier": "1652892468755-Etude de cas modélisation.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628521f98564d247de19c175",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628523a18564d247de19c185"
+  },
+  "titre": "Module Introduction aux Systèmes d’Information",
+  "description": "ce  document est un  cours du module SI qui contient 70  pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-01-19",
+  "nomUser": "karim mecis",
+  "nomFichier": "1652892577635-Cours1_2020_2021.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628521f98564d247de19c175",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628524038564d247de19c188"
+  },
+  "titre": "Cours Introduction aux Systèmes d’Information",
+  "description": "ce  document est un  cours du module SI qui contient 28 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-01-25",
+  "nomUser": "karim mecis",
+  "nomFichier": "1652892675461-Cours2_2020_2021.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628521f98564d247de19c175",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285243f8564d247de19c18b"
+  },
+  "titre": "Cours Introduction aux Systèmes d’Information",
+  "description": "ce  document est un  cours du module SI qui contient 61 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-01-31",
+  "nomUser": "",
+  "nomFichier": "1652892735025-Cours3_2020_2021 .pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628521f98564d247de19c175",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628525158564d247de19c19f"
+  },
+  "titre": "Rappels sur les Bases de l’Algorithmique",
+  "description": "ce  document est un  cours du module algorithmique qui contient 14 pages présenté par monsieur semailli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-11-10",
+  "nomUser": "sofia mecis",
+  "nomFichier": "1652892949105-Cours_Algo_Covid_19 I.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "6285246e8564d247de19c195",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628525738564d247de19c1a2"
+  },
+  "titre": "corrige etude de l'existant ",
+  "description": "ce  document est un  cours du module SI qui contient 2 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-21",
+  "nomUser": "sofia mecis",
+  "nomFichier": "1652893043066-Corrigé de l'étude de cas.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "6285246e8564d247de19c195",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628525e58564d247de19c1a5"
+  },
+  "titre": "code machine",
+  "description": "       ce  document est un  cours du module architecture des ordinateurs qui contient 7 pages présenté par monsieur faradj\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-03-24",
+  "nomUser": "sofia mecis",
+  "nomFichier": "1652893157715-codeMachine.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "6285246e8564d247de19c195",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628526ec8564d247de19c1b2"
+  },
+  "titre": "Introduction et Rappels ARCHI 2",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 9 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-13",
+  "nomUser": "sofia mecis",
+  "nomFichier": "1652893420496-1- ARCHI II CHAP 1(1).pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "6285246e8564d247de19c195",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628527c38564d247de19c1c3"
+  },
+  "titre": "Les interruptions",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 11 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-21",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652893635101-2- ARCHI_II_CHAP_2_2021.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628528788564d247de19c1c6"
+  },
+  "titre": "un peu de pratique sur les interruptions",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 10 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-06-18",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652893816633-2- ARCHI_II_CHAP_2_ANNEXE_2021.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628528e18564d247de19c1c9"
+  },
+  "titre": "Les Entrées / Sorties Chapitre 3 E/S ou I/O",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 18 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-23",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652893921228-3- ARCHI_II_CHAP_3_NOUV_2021.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628529318564d247de19c1cc"
+  },
+  "titre": "Cours Architecture des ordinateurs  Généralités ",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 2 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-11-11",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652894001437-Chap1-Generalite.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628529eb8564d247de19c1cf"
+  },
+  "titre": "chapitre 2 microprocesseur",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 16 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-02-14",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652894187127-Chap2-Microprocesseur.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852a3a8564d247de19c1d2"
+  },
+  "titre": "chapitre3 langage assembleur",
+  "description": "ce  document est un  cours du module architecture des ordinateurs qui contient 6 pages présenté par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-02-20",
+  "nomUser": "lina mecis",
+  "nomFichier": "1652894266870-Chap3-LngAssMach.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "628526fe8564d247de19c1b7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852b1c8564d247de19c1e6"
+  },
+  "titre": "Introduction aux bases de  données",
+  "description": "ce  document est un  cours du module SI qui contient15 pages présenté par madame",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-04-02",
+  "nomUser": "amir djedid ",
+  "nomFichier": "1652894492647-chapitre 1 2020 bdd.pdf",
+  "module": "base de donnee",
+  "typeFichier": "pdf",
+  "UserId": "62852a718564d247de19c1dc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852b828564d247de19c1e9"
+  },
+  "titre": "Conception de base de données",
+  "description": "ce  document est un  cours du module base de donnes qui contient14 pages présenté par madame ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-15",
+  "nomUser": "amir djedid ",
+  "nomFichier": "1652894594120-chapitre_2_conception_BD.pdf",
+  "module": "base de donnee",
+  "typeFichier": "pdf",
+  "UserId": "62852a718564d247de19c1dc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852bd38564d247de19c1ec"
+  },
+  "titre": "Langages relationnels",
+  "description": "ce  document est un  cours du module base de donnes qui contient10 pages présenté par madame",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-02",
+  "nomUser": "amir djedid ",
+  "nomFichier": "1652894675381-chapitre_3_chap_langage_algebriq1.pdf",
+  "module": "base de donnee",
+  "typeFichier": "pdf",
+  "UserId": "62852a718564d247de19c1dc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852c1d8564d247de19c1ef"
+  },
+  "titre": "Le langage SQL",
+  "description": "ce  document est un  cours du module base de donnes qui contient 15 pages présenté par madame",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-05",
+  "nomUser": "amir djedid ",
+  "nomFichier": "1652894749908-chapitre_4_langage_SQL_Pred_2016.pdf",
+  "module": "base de donnee",
+  "typeFichier": "pdf",
+  "UserId": "62852a718564d247de19c1dc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852db88564d247de19c201"
+  },
+  "titre": "Eléments de base du langage Java",
+  "description": "ce  document est un  cours du module POO qui contient 9 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-04-21",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895159996-1- ChapitreI_POO2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852e2c8564d247de19c204"
+  },
+  "titre": "(Programmation Orientée Objet 2",
+  "description": "ce  document est un  cours du module POO qui contient 62 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-21",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895275665-2- Chapitre_II-Classes_et_Objets2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852e848564d247de19c207"
+  },
+  "titre": "Classes Enveloppes",
+  "description": "ce  document est un  cours du module POO qui contient 4 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-14",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895364578-2- Classes_Enveloppes_java.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852ede8564d247de19c20a"
+  },
+  "titre": "Modificateurs et Niveaux de visibilité",
+  "description": "ce  document est un  cours du module POO qui contient 36 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-22",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895454273-3- ARCHI_II_CHAP_3_NOUV_2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852f258564d247de19c20d"
+  },
+  "titre": "Chaines de Caractères et Enumérations",
+  "description": "ce  document est un  cours du module POO qui contient 8 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-10",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895523530-4- ChapitreIV-Chaines_et_Enum_2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852f778564d247de19c210"
+  },
+  "titre": "Héritage et Polymorphisme",
+  "description": "ce  document est un  cours du module POO qui contient 22  pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-05-12",
+  "nomUser": "kenzidjadid",
+  "nomFichier": "1652895606076-5- 1- Cours_POO_Chapitre5-2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852c338564d247de19c1f3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628530848564d247de19c225"
+  },
+  "titre": "Complément de cours - La classe Object",
+  "description": "ce  document est un  cours du module POO qui contient 6 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-06-04",
+  "nomUser": "alla dif ",
+  "nomFichier": "1652895876423-5- 2- Class_Object-.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852fa38564d247de19c216",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628530c18564d247de19c228"
+  },
+  "titre": "Héritage et Polymorphism suite ",
+  "description": "       ce  document est un  cours du module POO qui contient 30 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-21",
+  "nomUser": "alla dif ",
+  "nomFichier": "1652895937312-5- 3- Cours-Chapitre_5_part2-2021.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852fa38564d247de19c216",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628531488564d247de19c233"
+  },
+  "titre": "Héritage et Polymorphisme suite 2",
+  "description": "ce  document est un  cours du module POO qui contient 26 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2020-07-27",
+  "nomUser": "alla dif ",
+  "nomFichier": "1652896072150-5- 4- CoursPOO-Chapitre_5_Part3.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62852fa38564d247de19c216",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285321f8564d247de19c244"
+  },
+  "titre": "Classes abstraites et Interfaces",
+  "description": "ce  document est un  cours du module POO qui contient 48 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-15",
+  "nomUser": "abdou dif",
+  "nomFichier": "1652896287332-6- Cours_POO_Chapitre6.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628531668564d247de19c23a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628532718564d247de19c247"
+  },
+  "titre": "Les Collections en java 1",
+  "description": "ce  document est un  cours du module POO qui contient 40 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-04-21",
+  "nomUser": "abdou dif",
+  "nomFichier": "1652896369046-7- Cours_POO_Chapitre7-part1.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628531668564d247de19c23a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628532b48564d247de19c24a"
+  },
+  "titre": "Les Collections en java 2",
+  "description": "ce  document est un  cours du module POO qui contient 34 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2019-03-12",
+  "nomUser": "abdou dif",
+  "nomFichier": "1652896436824-7- CoursPOO-Chapitre7part2.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628531668564d247de19c23a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628532ee8564d247de19c24d"
+  },
+  "titre": "Les Collections en java (part3)",
+  "description": "ce  document est un  cours du module POO qui contient 33 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-05",
+  "nomUser": "abdou dif",
+  "nomFichier": "1652896494406-7- CoursPOO-Chapitre7part3.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628531668564d247de19c23a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628536c08564d247de19c25f"
+  },
+  "titre": "Série d’exercices n° 1 Classes et Objets",
+  "description": "       ce  document est un  TD du module POO qui contient 1 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-04",
+  "nomUser": "wassim ait ahmmed ",
+  "nomFichier": "1652897472694-1- Serie1_TD_POO_2021.docx.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628535568564d247de19c255",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628539e08564d247de19c26a"
+  },
+  "titre": "Série d’exercices n° 2 Classes et Objets",
+  "description": "ce  document est un  TD du module POO qui contient 2 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-04-12",
+  "nomUser": "wassim ait ahmmed ",
+  "nomFichier": "1652898272365-1- Serie2TD-POO-2021.docx.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628535568564d247de19c255",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853a318564d247de19c26d"
+  },
+  "titre": "Série n°3 Modificateurs et Niveaux de visibilité",
+  "description": "ce  document est un  TD du module POO qui contient 3  pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-04-25",
+  "nomUser": "wassim ait ahmmed ",
+  "nomFichier": "1652898353146-1- serie3TDPOO_2021.doc.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628535568564d247de19c255",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853a998564d247de19c270"
+  },
+  "titre": "Série n°4 Héritage et Polymorphisme Classes abstraites et interfaces",
+  "description": "       ce  document est un  TD du module POO qui contient 4 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-29",
+  "nomUser": "wassim ait ahmmed ",
+  "nomFichier": "1652898457928-Serie4-TDPOO-2021.docx.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "628535568564d247de19c255",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853bc98564d247de19c291"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°2 – Classes et Objets",
+  "description": "       ce  document est un  TD du module POO qui contient 14 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2022-03-12",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652898760750-corrige_POO_-Serie2-Exos1-2-3.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853c1c8564d247de19c294"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°3 – Modificateurs et Niveaux de  visibilité",
+  "description": "       ce  document est un  TD du module POO qui contient 13 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2022-04-22",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652898843989-corrige_POO_-Serie3-Exo3.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853c848564d247de19c297"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°4 – Héritage et Polymorphisme",
+  "description": "              ce  document est un  TD du module POO qui contient 22 pages présenté par madame BOUKHEDOUMA\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-23",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652898948317-corrige_POO_-Serie4-Exo1.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853d1d8564d247de19c29a"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°4 – Héritage et Polymorphisme",
+  "description": "       ce  document est un  TD du module POO qui contient 14 pages présenté par madame BOUKHEDOUMA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-12",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652899100999-corrige_POO_-Serie4-Exo4.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853d888564d247de19c2a5"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°4 – Héritage et Polymorphisme 3",
+  "description": "ce  document est un  TD du module POO qui contient 11 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2019-03-30",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652899208445-corrige_POO_-Serie4-Exo5.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853dc58564d247de19c2a8"
+  },
+  "titre": "Corrigé d’exercices de TD POO Série n°2 et Série n°3 (suite) – Classes, Objets et  niveaux de visibilité",
+  "description": "ce  document est un  TD du module POO qui contient 16 pages présenté par madame BOUKHEDOUMA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2020-05-05",
+  "nomUser": "imen manaoui",
+  "nomFichier": "1652899269453-Corrige_POO-Serie4-Exo3.pdf",
+  "module": "POO",
+  "typeFichier": "pdf",
+  "UserId": "62853ab68564d247de19c274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853f9c8564d247de19c2da"
+  },
+  "titre": "Série d’exercices N° 01(Etude de l’organisation)",
+  "description": "ce  document est un  TD du module SI qui contient 2 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2020-12-30",
+  "nomUser": "lilia boudjalabe",
+  "nomFichier": "1652899740610-série 1si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "62853ec98564d247de19c2d0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853fe88564d247de19c2dd"
+  },
+  "titre": "Série d’exercices N° 02(Analyse du SI)",
+  "description": "ce  document est un  TD du module SI qui contient 4 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-01-12",
+  "nomUser": "lilia boudjalabe",
+  "nomFichier": "1652899816053-série 2si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "62853ec98564d247de19c2d0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285403e8564d247de19c2e0"
+  },
+  "titre": "Série d’exercices N° 03(Codification et Contrôles)",
+  "description": "ce  document est un  TD du module SI qui contient 3 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-01-27",
+  "nomUser": "lilia boudjalabe",
+  "nomFichier": "1652899902556-série 3si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "62853ec98564d247de19c2d0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628540808564d247de19c2e3"
+  },
+  "titre": "Série d’exercices N° 04 « Modélisation Statique du SI »",
+  "description": "ce  document est un  TD du module SI qui contient 3 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-02-02",
+  "nomUser": "lilia boudjalabe",
+  "nomFichier": "1652899968056-série 4si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "62853ec98564d247de19c2d0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628541bb8564d247de19c2f2"
+  },
+  "titre": "Corrigé de la série d’exercices N° 01(Etude de l’organisation)",
+  "description": "       ce  document est un  TD du module SI qui contient 3 pages présenté par madame AZZOUZ\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-01-15",
+  "nomUser": "chakib ait ahmmed ",
+  "nomFichier": "1652900283508-Corrigé Série 1si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628540958564d247de19c2e7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628542098564d247de19c2f5"
+  },
+  "titre": "Série d’exercices N° 02(Analyse du SI)",
+  "description": "       ce  document est un  TD du module SI qui contient 17  pages présenté par madame AZZOUZ\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-01-29",
+  "nomUser": "chakib ait ahmmed ",
+  "nomFichier": "1652900361095-corrigé série 02si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628540958564d247de19c2e7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628542638564d247de19c2f8"
+  },
+  "titre": "corrige serie N 3 TD Codification et contrôles",
+  "description": "ce  document est un  TD du module SI qui contient 18 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-02-08",
+  "nomUser": "chakib ait ahmmed ",
+  "nomFichier": "1652900451161-corrigé série 03si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628540958564d247de19c2e7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628542bc8564d247de19c2fb"
+  },
+  "titre": "Série d’exercices N° 04 « Modélisation Statique du SI »",
+  "description": "ce  document est un  TD du module SI qui contient 7 pages présenté par madame AZZOUZ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-02-17",
+  "nomUser": "chakib ait ahmmed ",
+  "nomFichier": "1652900540016-corrigé série 4si.pdf",
+  "module": "SI",
+  "typeFichier": "pdf",
+  "UserId": "628540958564d247de19c2e7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628545798564d247de19c31f"
+  },
+  "titre": "intero 2018",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 1 pages présenté par madame semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-02-23",
+  "nomUser": "lila mecis",
+  "nomFichier": "1652901241050-intero_2018_2019.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "6285436d8564d247de19c315",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628545ea8564d247de19c322"
+  },
+  "titre": "rattrapage 2016-2017 ",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 1 pages présenté par monsieur  semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-03-18",
+  "nomUser": "lila mecis",
+  "nomFichier": "1652901354745-RATTRAPAGE_2016_2017.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "6285436d8564d247de19c315",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285468e8564d247de19c325"
+  },
+  "titre": "exo_Algo_covid",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 1 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2020-12-12",
+  "nomUser": "lila mecis",
+  "nomFichier": "1652901518073-exo_Algo_covid.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "6285436d8564d247de19c315",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628547068564d247de19c328"
+  },
+  "titre": "corrige exo_Algo_covid",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 7 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-03-23",
+  "nomUser": "lila mecis",
+  "nomFichier": "1652901638638-exo_Algo_covid (1).docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "6285436d8564d247de19c315",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628548108564d247de19c33c"
+  },
+  "titre": "solution rattrapage algo",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 4 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-05",
+  "nomUser": "meriem khacheroud",
+  "nomFichier": "1652901904239-solution rat algo.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628547688564d247de19c332",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628548708564d247de19c33f"
+  },
+  "titre": "serie recursivite ",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 5 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-03-16",
+  "nomUser": "meriem khacheroud",
+  "nomFichier": "1652902000678-serie_recursivite.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628547688564d247de19c332",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628548da8564d247de19c342"
+  },
+  "titre": "serie piles",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 4 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2020-04-23",
+  "nomUser": "meriem khacheroud",
+  "nomFichier": "1652902106472-Serie_Pile.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628547688564d247de19c332",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628549508564d247de19c345"
+  },
+  "titre": "serie d'exercice sur les arbres ",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 4 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-04",
+  "nomUser": "meriem khacheroud",
+  "nomFichier": "1652902224624-Serie_Arbres.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628547688564d247de19c332",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62854a3e8564d247de19c351"
+  },
+  "titre": "solution exo sur les arabres",
+  "description": "ce  document est un  TD du module alghirithmiques  qui contient 4 pages présenté par monsieur semalli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-19",
+  "nomUser": "meriem khacheroud",
+  "nomFichier": "1652902462943-SolutionExo_Arbre.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "628547688564d247de19c332",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62854c9c8564d247de19c364"
+  },
+  "titre": "solution image pile",
+  "description": "ce document est td du module algorithmiques qui contient 5 pages et presente par monsieur semailli",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2020-01-31",
+  "nomUser": "mouhamed kacheroude",
+  "nomFichier": "1652903068740-solution_image_pile.docx.pdf",
+  "module": "algorithmique",
+  "typeFichier": "pdf",
+  "UserId": "62854a9c8564d247de19c355",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62854d8e8564d247de19c367"
+  },
+  "titre": "serie td 1 archi",
+  "description": "ce document est td du module architecture des ordinateurs qui contient 2 pages et presente par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-01-16",
+  "nomUser": "mouhamed kacheroude",
+  "nomFichier": "1652903310310-serieExe1.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "62854a9c8564d247de19c355",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62854e438564d247de19c36a"
+  },
+  "titre": "serie de td 2  archi",
+  "description": "ce document est td du module architecture des ordinateurs qui contient 3 pages et presente par monsieur faradj",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-02-15",
+  "nomUser": "mouhamed kacheroude",
+  "nomFichier": "1652903491796-serieExe2.pdf",
+  "module": "architecture des ordinateurs",
+  "typeFichier": "pdf",
+  "UserId": "62854a9c8564d247de19c355",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628767078d0ba392b076f12b"
+  },
+  "titre": "cours 1&2",
+  "description": "       ce document est cours du module GL qui contient 10 pages présente par  madame Samia BOULKRINA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-19",
+  "nomUser": "mohammed khacheroud",
+  "nomFichier": "1653040901823-Cours 1 & 2 (Presentielle).pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62854a9c8564d247de19c355",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628767bb8d0ba392b076f138"
+  },
+  "titre": "cycle de vie",
+  "description": "ce document est cours du module GL qui contient 28 pages présente par  madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-12",
+  "nomUser": "mouhamed kacheroude",
+  "nomFichier": "1653041083001-Cours#3---Cycle de Vie.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62854a9c8564d247de19c355",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628768cb8d0ba392b076f146"
+  },
+  "titre": "modele de cycle de vie",
+  "description": "ce document est cours du module GL qui contient 26 pages présente par  madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-19",
+  "nomUser": "assia mecis",
+  "nomFichier": "1653041355706-Cours#4---Modèles de cycle de Vie.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628767da8d0ba392b076f13c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628769e58d0ba392b076f150"
+  },
+  "titre": "unified modeling language",
+  "description": "ce document est cours du module GL qui contient 11 pages présente par  madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-28",
+  "nomUser": "assia mecis",
+  "nomFichier": "1653041637418-Cours#5---Unified Modeling Language.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628767da8d0ba392b076f13c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876a5f8d0ba392b076f153"
+  },
+  "titre": "diagramme de cas d'utilisation",
+  "description": "ce document est cours du module GL qui contient 35 pages présente par  madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-07",
+  "nomUser": "assia mecis",
+  "nomFichier": "1653041755889-Cours#6-Diagramme Cas-utilisation.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628767da8d0ba392b076f13c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876b1c8d0ba392b076f156"
+  },
+  "titre": "diagramme d'activite ",
+  "description": "ce document est cours du module GL qui contient 30 pages présente par  madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-07",
+  "nomUser": "assia mecis",
+  "nomFichier": "1653041946306-Cours#7-Diagramme d'Activité.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628767da8d0ba392b076f13c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876c6e8d0ba392b076f168"
+  },
+  "titre": "diagramme de classe",
+  "description": "ce document est cours du module GL qui contient 67 pages présente par madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-30",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653042286066-Cours#8-Diagramme de classes.pptx.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876cd28d0ba392b076f16b"
+  },
+  "titre": "diagramme d'objet",
+  "description": "ce document est cours du module GL qui contient 10 pages présente par madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2022-06-18",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653042386757-Cours#9-Diagramme d'Objet.pptx.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876d848d0ba392b076f16e"
+  },
+  "titre": "diagramme de séquence ",
+  "description": "ce document est cours du module GL qui contient 36 pages présente par madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-14",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653042564598-Cours#10-Diagramme de séquence.pptx.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628772367156714bfc11ab7f"
+  },
+  "titre": "Evolution des Langages de  Programmation",
+  "description": "ce document est cours du module GL qui contient 27 pages présente par madame ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-05",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653043766533-1 - Les Langages et Styles de Programmation.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628772d37156714bfc11ab82"
+  },
+  "titre": "Cycle de vie du GL et  principes de l’agilité du  développement",
+  "description": "ce document est cours du module GL qui contient 10 pages présente par madame ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-05",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653043922670-2-Cycle-de-Vie-et-Agilité.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6287736c7156714bfc11ab85"
+  },
+  "titre": "Rappel sur le GL et ses technologies",
+  "description": "ce document est cours du module GL qui contient 5 pages présente par madame Samia BOULKRINA",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-05",
+  "nomUser": "nadia mecis",
+  "nomFichier": "1653044076648-2B- Cycle de Vie et Agilité (détailé).pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "62876b528d0ba392b076f15c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628774687156714bfc11ab95"
+  },
+  "titre": "Ré-ingénierie du Développement d’Application",
+  "description": "       ce document est cours du module GL qui contient 25 pages présente par madame Samia BOULKRINA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-05",
+  "nomUser": "nassima mecis",
+  "nomFichier": "1653044451866-3- Methode RAD2.pdf",
+  "module": "orad",
+  "typeFichier": "pdf",
+  "UserId": "628773927156714bfc11ab8b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628775627156714bfc11aba5"
+  },
+  "titre": "Extra-orad",
+  "description": "       ce document est cours du module GL qui contient 59 pages présente par madame Samia BOULKRINA\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-05",
+  "nomUser": "nassima mecis",
+  "nomFichier": "1653044578444-Extra_ ORAD_Leçon2_Le Lancement_Projet.pdf",
+  "module": "orad",
+  "typeFichier": "pdf",
+  "UserId": "628773927156714bfc11ab8b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628775e37156714bfc11abb0"
+  },
+  "titre": "Extra-orad2",
+  "description": "ce document est cours du module GL qui contient 43 pages présente par madame ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-05",
+  "nomUser": "nassima mecis",
+  "nomFichier": "1653044706856-Extra_ ORAD_Leçon3_Le Planning_Projet.pdf",
+  "module": "orad",
+  "typeFichier": "pdf",
+  "UserId": "628773927156714bfc11ab8b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877b6a7156714bfc11abc1"
+  },
+  "titre": "Système d’exploitation I",
+  "description": "ce document est cours du module GL qui contient 18 pages présente par madame Dr. CHENAIT Manel",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-05-23",
+  "nomUser": "radia mecis",
+  "nomFichier": "1653046122470-diapo_introduction.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "628779e57156714bfc11abb6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877bea7156714bfc11abc4"
+  },
+  "titre": "GESTION DU PROCESSEUR CENTRAL",
+  "description": "ce document est cours du module GL qui contient 10 pages présente par madame Dr M.CHENAIT",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-18",
+  "nomUser": "radia mecis",
+  "nomFichier": "1653046250310-diapo_Gest_PC.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "628779e57156714bfc11abb6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877c627156714bfc11abc7"
+  },
+  "titre": "GESTION DES E/S PHYSIQUES",
+  "description": "ce document est cours du module GL qui contient 30 pages présente par madame Dr M.CHENAIT",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-30",
+  "nomUser": "radia mecis",
+  "nomFichier": "1653046370506-diapo_gesE_S.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "628779e57156714bfc11abb6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877ce37156714bfc11abca"
+  },
+  "titre": "GESTION DU MÉMOIRE CENTRALE",
+  "description": "ce document est cours du module GL qui contient 27 pages présente par madame Dr M.CHENAIT",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "cours",
+  "date": "2021-06-18",
+  "nomUser": "radia mecis",
+  "nomFichier": "1653046499116-diapo_Ges MC.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "628779e57156714bfc11abb6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877f4e7156714bfc11abda"
+  },
+  "titre": "sys serie 1",
+  "description": "       ce document est cours du module GL qui contient 6 pages présente par madame Dr M.CHENAIT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-20",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047118908-SysSérie1.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877fa17156714bfc11abdd"
+  },
+  "titre": "corrige sys serie 1",
+  "description": "       ce document est cours du module GL qui contient 6 pages présente par madame Dr M.CHENAIT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-22",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047201321-sysSérie1_Cor.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6287800a7156714bfc11abe0"
+  },
+  "titre": "sys serie 2",
+  "description": "       ce document est cours du module GL qui contient 2 pages présente par madame Dr M.CHENAIT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-20",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047306385-sysSérie2.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628780787156714bfc11abe3"
+  },
+  "titre": "corrige  sys serie 2",
+  "description": "              ce document est cours du module GL qui contient 5 pages présente par madame Dr M.CHENAIT\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-30",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047416134-sysSERIE2_cor.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628780d87156714bfc11abe6"
+  },
+  "titre": "sys serie 3",
+  "description": "       ce document est cours du module GL qui contient 2 pages présente par madame Dr M.CHENAIT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-21",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047512271-sysSérie3.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628781227156714bfc11abe9"
+  },
+  "titre": "corrige  sys serie 3",
+  "description": "       ce document est cours du module GL qui contient 10 pages présente par madame Dr M.CHENAIT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-02",
+  "nomUser": "yanis kherif",
+  "nomFichier": "1653047586304-sysSerie 3_corr.pdf",
+  "module": "systeme d'exploitation ",
+  "typeFichier": "pdf",
+  "UserId": "62877e597156714bfc11abd0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628783ba7156714bfc11abf7"
+  },
+  "titre": "serie td 2",
+  "description": "              ce document est cours du module GL qui contient 1 pages présente par madame Samia BOULKRINAT\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2022-06-03",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048250461-GL TD #2.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6287845d7156714bfc11ac02"
+  },
+  "titre": "corrige  td serie 2",
+  "description": "       ce document est cours du module GL qui contient 2 pages présente par madame Samia BOULKRINAT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-03",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048413355-GL Solution TD #2.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6287849d7156714bfc11ac05"
+  },
+  "titre": "GL td 3",
+  "description": "       ce document est cours du module GL qui contient 1 pages présente par madame Samia BOULKRINAT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-03",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048477308-GL TD #3.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628784db7156714bfc11ac08"
+  },
+  "titre": "GL td 4",
+  "description": "       ce document est cours du module GL qui contient 1 pages présente par madame Samia BOULKRINAT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-05-24",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048539503-GL TD #4.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628785337156714bfc11ac0b"
+  },
+  "titre": "GL td 5",
+  "description": "              ce document est cours du module GL qui contient 1 pages présente par madame Samia BOULKRINAT\r\n    \r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2022-05-18",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048627082-GL TD #5.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628785747156714bfc11ac0e"
+  },
+  "titre": "gl td 6",
+  "description": "       ce document est cours du module GL qui contient 1 pages présente par madame Samia BOULKRINAT\r\n    ",
+  "niveau": "L2",
+  "specialite": "informatique",
+  "categorie": "cours algorithmique",
+  "type": "TD",
+  "date": "2021-06-29",
+  "nomUser": "imad khoukhi",
+  "nomFichier": "1653048692978-GL TD #6.pdf",
+  "module": "GL",
+  "typeFichier": "pdf",
+  "UserId": "628782b57156714bfc11abed",
+  "__v": 0
+}]

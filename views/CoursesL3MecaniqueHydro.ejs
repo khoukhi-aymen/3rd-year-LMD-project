@@ -1,0 +1,101 @@
+<%- include("parts/header.ejs") %>
+<br />
+<div style="height: 100%">
+  <% if(books.length == 0){%>
+  <div style="padding-top: 80px" class="container">
+    <h1 style="margin-left: 200px; color: black">
+      <!-- ce repertoire est vide &#128517;, Soyer le premier à déposer des documents
+      &#128513; -->
+    </h1>
+    <img
+      src="images/dossier.jpg"
+      alt="courses picture"
+      style="transform: translateX(350px)"
+    />
+  </div>
+  <%}else{%>
+  <!-- Row -->
+  <div class="row" style="font-size: 23px; color: black">
+    <div class="col-lg-12">
+      <!-- DataTable with Hover -->
+      <div class="col-lg-12">
+        <div class="card mb-4">
+          <div
+            class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+          >
+            <h6
+              class="m-0 font-weight-bold text-primary"
+              style="font-size: 20px"
+            >
+              All Documents with Hover
+            </h6>
+          </div>
+          <div
+            style="background-color: rgb(190, 181, 49)"
+            class="table-responsive p-3"
+          >
+            <table
+              class="table align-items-center table-flush table-hover"
+              id="dataTableHover"
+            >
+              <thead class="thead-light">
+                <tr>
+                  <th style="color: black">titre</th>
+                  <th style="color: black">niveau</th>
+                  <th style="color: black">specialite</th>
+                  <th style="color: black">module</th>
+                  <th style="color: black">date</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th style="color: black">titre</th>
+                  <th style="color: black">niveau</th>
+                  <th style="color: black">specialite</th>
+                  <th style="color: black">module</th>
+                  <th style="color: black">date</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <% for(let book of books){%>
+                <tr>
+                  <th>
+                    <a href="/Documentdetails/<%= book._id%>"
+                      ><h1 style="color: rgb(3, 37, 150)"><%= book.titre%></h1>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="/Documentdetails/<%= book._id%>"
+                      ><h1 style="color: rgb(3, 37, 150)"><%= book.niveau%></h1>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="/Documentdetails/<%= book._id%>"
+                      ><h1 style="color: rgb(3, 37, 150)">
+                        <%= book.specialite%>
+                      </h1>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="/Documentdetails/<%= book._id%>"
+                      ><h1 style="color: rgb(3, 37, 150)"><%= book.module%></h1>
+                    </a>
+                  </th>
+                  <th>
+                    <a href="/Documentdetails/<%= book._id%>"
+                      ><h1 style="color: rgb(3, 37, 150)"><%= book.date%></h1>
+                    </a>
+                  </th>
+                </tr>
+                <%}%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Row-->
+  </div>
+  <%}%>
+</div>
+<%- include("parts/footer.ejs") %>

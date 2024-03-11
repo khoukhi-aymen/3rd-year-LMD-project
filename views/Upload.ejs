@@ -1,0 +1,192 @@
+<%- include("parts/header.ejs") %>
+<br />
+<br />
+<br />
+<br />
+
+<div
+  class="container"
+  style="background-color: rgb(190, 181, 49); font-size: 23px"
+>
+  <br />
+  <% if(Smessage){%>
+  <div class="alert alert-success"><%= Smessage%></div>
+  <%}%> <% if(Emessage){%>
+  <div class="alert alert-danger"><%= Emessage%></div>
+  <%}%>
+  <br />
+  <form method="POST" action="/Upload" enctype="multipart/form-data">
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px"
+        >Document title</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="titre"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px"
+        >Description</label
+      >
+      <textarea
+        type="text"
+        class="form-control"
+        style="resize: none; font-size: 20px"
+        rows="4"
+        name="description"
+      ></textarea>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label for="niveau" style="color: rgb(2, 2, 2)">level</label>
+      <select id="type" name="niveau" required>
+        <option value="L1">L1</option>
+        <option value="L2">L2</option>
+        <option value="L3">L3</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">specialety</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="specialite"
+        required
+      />
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label for="categorie" style="color: rgb(2, 2, 2)">category</label>
+      <select id="categorie" name="categorie" required>
+        <option value="cours algorithmique">cours algorithmique</option>
+        <option value="cours mathematique">cours mathematique</option>
+        <option value="memoire licence">memoire licence</option>
+        <option value="Cours anglais">Cours anglais</option>
+        <option value="cours physique">cours physique</option>
+        <option value="cours office">cours Office</option>
+        <option value="cours biologie">cours biologie</option>
+        <option value="cours chimie">cours chimie</option>
+        <option value="cours geologie">cours geologie</option>
+        <option value="cours technologie">cours technologie</option>
+        <option value="cours génie Civil">cours génie Civil</option>
+        <option value="Design">Design</option>
+        <option value="Réglementation">Réglementation</option>
+        <option value="cours Télécommunication">cours Télécommunication</option>
+        <option value="cours Electronique">cours Electronique</option>
+        <option value="cours réseaux">cours réseaux</option>
+        <option value="cours hydrolique">cours hydrolique</option>
+        <option value="cours pharmacie">cours pharmacie</option>
+        <option value="cours Agronomie">cours Agronomie</option>
+        <option value="cours lois">cours lois</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label for="type" style="color: rgb(2, 2, 2)">kind</label>
+      <select id="type" name="type" required>
+        <option value="cours">cours</option>
+        <option value="TD">TD</option>
+        <option value="TP">TP</option>
+        <option value="Exemens">Exemens</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">date</label>
+      <input
+        type="date"
+        class="form-control"
+        style="font-size: 20px"
+        name="date"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">full Name</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="nomUser"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">module</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="module"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label for="niveau" style="color: rgb(2, 2, 2)">type of Document</label>
+      <select id="type" name="typeFichier" required>
+        <option value="pdf">pdf</option>
+        <option value="image">image</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">File Name</label>
+      <input
+        type="file"
+        accept=".pdf,.jpg,.png,jpeg"
+        class="form-control"
+        style="font-size: 20px"
+        name="nomFichier"
+        required
+      />
+    </div>
+    <br />
+    <br />
+    <button
+      class="btn btn-primary"
+      type="submit"
+      style="color: white; margin-left: 40%"
+    >
+      <h1>Add</h1>
+    </button>
+    <button
+      class="btn btn-danger"
+      type="reset"
+      style="color: white; margin-left: 5%"
+    >
+      <h1>Cansel</h1>
+    </button>
+    <!-- <input type="reset" value="Reset" class="btn btn-danger" />
+    <input type="submit" value="Submit" class="btn btn-primary" /> -->
+    <br />
+    <br />
+  </form>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<%- include("parts/footer.ejs") %>

@@ -1,0 +1,2875 @@
+const pdfControler = require("../controlers/pdfControler");
+const router = require("express").Router();
+const gaurdAuth = require("./guardAuth");
+const multer = require("multer");
+const body = require("express").urlencoded({ extended: true });
+//------------------------------------------------------------
+//L3 informatique
+// ****************partie Cours*************
+router.get(
+  "/CoursesL3InfoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3InformatiuqeAlgo
+);
+router.get(
+  "/CoursL3InfoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3InformatiuqeMath
+);
+router.get(
+  "/CoursL3InfoMemLicence",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3InformatiuqeMemLicence
+);
+// *************partie TD******************
+router.get(
+  "/TDL3infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3infoAlgo
+);
+router.get(
+  "/TDL3infomath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3infomath
+);
+// *************partie TP******************
+router.get(
+  "/TPL3infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3infoAlgo
+);
+router.get(
+  "/TPL3infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3infoMath
+);
+// *************partie Exemens******************
+router.get(
+  "/ExemensL3infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3infoAlgo
+);
+router.get(
+  "/ExemensL3infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3infoMath
+);
+// **************** image ************
+router.get(
+  "/imageL3infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3infoAlgo
+);
+router.get(
+  "/imageL3infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3infoMath
+);
+router.get(
+  "/imageL3infoMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3infoMemLic
+);
+// *************render******************
+router.get(
+  "/L3informatique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3informatique
+);
+router.get(
+  "/L3InfoalgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3InfoalgoCourses
+);
+router.get(
+  "/L3InfoMemLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3InfoMemLicCourses
+);
+router.get(
+  "/L3InfoMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3InfoMathCourses
+);
+//------------------------------------------------------------
+//L3 Mathematique
+// *************partie cours******************
+router.get(
+  "/CoursesL3MathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MathematiqueAlgo
+);
+router.get(
+  "/CoursL3MathMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MathematiqueMath
+);
+router.get(
+  "/CoursL3MathMemLicence",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MathematiqueMemLicence
+);
+// *************partie TD******************
+router.get(
+  "/TDL3mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3mathAlgo
+);
+router.get(
+  "/TDL3mathmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3mathmath
+);
+// *************partie TP******************
+router.get(
+  "/TPL3mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3mathAlgo
+);
+router.get(
+  "/TPL3mathmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3mathmath
+);
+// *************partie Exemens******************
+router.get(
+  "/ExemensL3mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3mathAlgo
+);
+router.get(
+  "/ExemensL3mathmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3mathmath
+);
+// *************image******************
+router.get(
+  "/imageL3mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3mathAlgo
+);
+router.get(
+  "/imageL3matmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3matmath
+);
+router.get(
+  "/imageL3matMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3matMemLic
+);
+// *************render******************
+router.get(
+  "/L3Mathematique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3Mathematique
+);
+router.get(
+  "/L3MathAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MathAlgoCourses
+);
+router.get(
+  "/L3MathMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MathMathCourses
+);
+router.get(
+  "/L3MathMemLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MathMemLicCourses
+);
+//------------------------------------------------------------
+//L2 informatique
+// **************** partie Cours************
+router.get(
+  "/CoursesL2InfoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2InformatiuqeAlgo
+);
+router.get(
+  "/CoursL2InfoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2InformatiuqeMath
+);
+router.get(
+  "/CoursL2InfoEnglish",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2InformatiuqeEnglish
+);
+// **************** partie TD************
+router.get(
+  "/TDL2infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2infoAlgo
+);
+router.get(
+  "/TDL2infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2infoMath
+);
+// **************** partie TP************
+router.get(
+  "/TPL2infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2infoAlgo
+);
+router.get(
+  "/TPL2infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2infoMath
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL2infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2infoAlgo
+);
+router.get(
+  "/ExemensL2infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2infoMath
+);
+router.get(
+  "/ExemensL2infoEnglish",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2infoEnglish
+);
+// *************image******************
+router.get(
+  "/imageL2infoAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2infoAlgo
+);
+router.get(
+  "/imageL2infoMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2infoMath
+);
+router.get(
+  "/imageL2infoEnglish",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2infoEnglish
+);
+// *************render******************
+router.get(
+  "/L2informatique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2informatique
+);
+router.get(
+  "/L2InfoalgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2InfoalgoCourses
+);
+router.get(
+  "/L2InfoMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2InfoMathCourses
+);
+router.get(
+  "/L2InfoEnglishCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2InfoEnglishCourses
+);
+//------------------------------------------------------------
+//L2 mathematique
+// **************** partie cours************
+router.get(
+  "/CoursesL2MathMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MathematiqueMath
+);
+router.get(
+  "/CoursesL2MathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MathematiqueAlgo
+);
+// **************** partie TD************
+router.get(
+  "/TDL2mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2mathAlgo
+);
+router.get(
+  "/TDL2mathmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2mathmath
+);
+// **************** partie TP************
+router.get(
+  "/TPL2mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2mathAlgo
+);
+router.get(
+  "/TPL2mathmath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2mathmath
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL2mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2mathAlgo
+);
+router.get(
+  "/ExemensL2mathMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2mathMath
+);
+// ****************image*************
+router.get(
+  "/imageL2mathAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2mathAlgo
+);
+router.get(
+  "/imageL2mathMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2mathMath
+);
+// *************render******************
+router.get(
+  "/L2Mathematique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2Mathematique
+);
+router.get(
+  "/L2MathMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MathMathCourses
+);
+router.get(
+  "/L2MathAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MathAlgoCourses
+);
+//------------------------------------------------------------
+//L2 Mécanique
+// **************** partie cours************
+router.get(
+  "/CoursesL2MecaniqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MecaniqueMath
+);
+router.get(
+  "/CoursesL2MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MecaniqueAlgo
+);
+router.get(
+  "/CoursesL2MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MecaniquePhysique
+);
+router.get(
+  "/CoursesL2MecaniqueTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2MecaniqueTechnologie
+);
+// **************** partie TD************
+router.get(
+  "/TDL2MecaniqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2MecaniqueMath
+);
+router.get(
+  "/TDL2MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2MecaniqueAlgo
+);
+router.get(
+  "/TDL2Mecaniquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2Mecaniquephysique
+);
+router.get(
+  "/TDL2MecaniqueTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2MecaniqueTechnologie
+);
+// **************** partie TP************
+router.get(
+  "/TPL2MecaniqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2MecaniqueMath
+);
+router.get(
+  "/TPL2MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2MecaniqueAlgo
+);
+router.get(
+  "/TPL2MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2MecaniquePhysique
+);
+router.get(
+  "/TPL2MecaniqueTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2MecaniqueTechnologie
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL2MecaniqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2MecaniqueMath
+);
+router.get(
+  "/ExemensL2MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2MecaniqueAlgo
+);
+router.get(
+  "/ExemensL2MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2MecaniquePhysique
+);
+router.get(
+  "/ExemensL2MecaniqueTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2MecaniqueTechnologie
+);
+// **************** image ************
+router.get(
+  "/imageL2MecaniqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2MecaniqueMath
+);
+router.get(
+  "/imageL2MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2MecaniqueAlgo
+);
+router.get(
+  "/imageL2MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2MecaniquePhysique
+);
+router.get(
+  "/imageL2MecaniqueTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2MecaniqueTechnologie
+);
+// *************render******************
+router.get(
+  "/L2Mecanique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2Mecanique
+);
+router.get(
+  "/L2MecaniqueMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MecaniqueMathCourses
+);
+router.get(
+  "/L2MecaniqueAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MecaniqueAlgoCourses
+);
+router.get(
+  "/L2MecaniquePhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MecaniquePhysiqueCourses
+);
+router.get(
+  "/L2MecaniqueTechnologieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2MecaniqueTechnologieCourses
+);
+// ----------------------------------------------------------------------
+//L2 génie Civil
+// **************** partie cours************
+router.get(
+  "/CoursesL2GenieCivilMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GenieCivilMath
+);
+router.get(
+  "/CoursesL2GenieCivilGC",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GenieCivilGC
+);
+router.get(
+  "/CoursesL2GenieCivilPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GenieCivilPhysique
+);
+router.get(
+  "/CoursesL2GenieCivilTechno",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GenieCivilTechno
+);
+// **************** partie TD************
+router.get(
+  "/TDL2GenieCivilMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GenieCivilMath
+);
+router.get(
+  "/TDL2GenieCivilGC",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GenieCivilGC
+);
+router.get(
+  "/TDL2GenieCivilPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GenieCivilPhysique
+);
+
+router.get(
+  "/TDL2GenieCivilTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GenieCivilTechnologie
+);
+// **************** partie TP************
+router.get(
+  "/TPL2GenieCivilMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GenieCivilMath
+);
+router.get(
+  "/TPL2GenieCivilGC",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GenieCivilGC
+);
+router.get(
+  "/TPL2GenieCivilPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GenieCivilPhysique
+);
+router.get(
+  "/TPL2GenieCivilTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GenieCivilTechnologie
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL2GenieCivilMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GenieCivilMath
+);
+router.get(
+  "/ExemensL2GenieCivilGC",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GenieCivilGC
+);
+router.get(
+  "/ExemensL2GenieCivilPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GenieCivilPhysique
+);
+router.get(
+  "/ExemensL2GenieCivilTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GenieCivilTechnologie
+);
+// **************** image ************
+router.get(
+  "/imageL2GenieCivilMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GenieCivilMath
+);
+router.get(
+  "/imageL2GenieCivilGC",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GenieCivilGC
+);
+router.get(
+  "/imageL2GenieCivilPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GenieCivilPhysique
+);
+router.get(
+  "/imageL2GenieCivilTechnologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GenieCivilTechnologie
+);
+// *************render******************
+router.get(
+  "/L2GenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2GénieCivil
+);
+router.get(
+  "/L2GenieCivilMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieCivilMathCourses
+);
+router.get(
+  "/L2GenieCivilGCCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieCivilGCCourses
+);
+router.get(
+  "/L2GenieCivilTechnoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieCivilTechnoCourses
+);
+router.get(
+  "/L2GenieCivilPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieCivilPhysiqueCourses
+);
+//------------------------------------------------------------
+//L2 Génie des procédés
+// *************partie cours******************
+router.get(
+  "/CoursesL2GPMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GPMath
+);
+router.get(
+  "/CoursesL2GPChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GPChimie
+);
+router.get(
+  "/CoursesL2GPPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GPPhysique
+);
+router.get(
+  "/CoursesL2GPDesign",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GPDesign
+);
+router.get(
+  "/CoursesL2GPreglemnatation",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2GPreglemnatation
+);
+// *************partie TD******************
+router.get(
+  "/TDL2GPMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GPMath
+);
+router.get(
+  "/TDL2GPPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GPPhysique
+);
+router.get(
+  "/TDL2GPChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GPChimie
+);
+router.get(
+  "/TDL2GPDesign",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GPDesign
+);
+router.get(
+  "/TDL2GPReglemenatation",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2GPReglemenatation
+);
+// *************TP******************
+router.get(
+  "/TPL2GPMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GPMath
+);
+router.get(
+  "/TPL2GPPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GPPhysique
+);
+router.get(
+  "/TPL2GPChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GPChimie
+);
+router.get(
+  "/TPL2GPDesign",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GPDesign
+);
+router.get(
+  "/TPL2GPReglementation",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2GPReglementation
+);
+// *************Exemens******************
+router.get(
+  "/ExemensL2GPMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GPMath
+);
+router.get(
+  "/ExemensL2GPChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GPChimie
+);
+router.get(
+  "/ExemensL2GPPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GPPhysique
+);
+router.get(
+  "/ExemensL2GPDesign",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GPDesign
+);
+router.get(
+  "/ExemensL2GPReglemenatation",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2GPReglemenatation
+);
+// **************** image ************
+router.get(
+  "/imageL2GPMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GPMath
+);
+router.get(
+  "/imageL2GPChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GPChimie
+);
+router.get(
+  "/imageL2GPPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GPPhysique
+);
+router.get(
+  "/imageL2GPDesign",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GPDesign
+);
+router.get(
+  "/imageL2GPReglemenatation",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2GPReglemenatation
+);
+// *************render******************
+router.get(
+  "/L2GenieDesProcedes",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2GenieDesProcedes
+);
+router.get(
+  "/L2GenieProcedesMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieProcedesMathCourses
+);
+router.get(
+  "/L2GenieProcedesPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieProcedesPhysiqueCourses
+);
+router.get(
+  "/L2GenieProcedesChimieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieProcedesChimieCourses
+);
+router.get(
+  "/L2GenieProcedesdesignCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieProcedesdesignCourses
+);
+router.get(
+  "/L2GenieProcedesReglemantationCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2GenieProcedesReglemantationCourses
+);
+//------------------------------------------------------------
+//L2 Telecommunication
+// **************** partie cours************
+router.get(
+  "/CoursesL2TelecomMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2TelecomMath
+);
+router.get(
+  "/CoursesL2TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2TelecomPhysique
+);
+router.get(
+  "/CoursesL2TelecomTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2TelecomTelecom
+);
+router.get(
+  "/CoursesL2TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2TelecomElectronique
+);
+// **************** partie TD************
+router.get(
+  "/TDL2TelecomMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2TelecomMath
+);
+router.get(
+  "/TDL2TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2TelecomPhysique
+);
+router.get(
+  "/TDL2TelecomTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2TelecomTelecom
+);
+router.get(
+  "/TDL2TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2TelecomElectronique
+);
+// **************** partie TP************
+router.get(
+  "/TPL2TelecomMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2TelecomMath
+);
+router.get(
+  "/TPL2TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2TelecomPhysique
+);
+router.get(
+  "/TPL2TelecomTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2TelecomTelecom
+);
+router.get(
+  "/TPL2TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2TelecomElectronique
+);
+// ****************partie Exemens************
+router.get(
+  "/ExemensL2TelecomMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2TelecomMath
+);
+router.get(
+  "/ExemensL2TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2TelecomPhysique
+);
+router.get(
+  "/ExemensL2TelecomTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2TelecomTelecom
+);
+router.get(
+  "/ExemensL2TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL2TelecomElectronique
+);
+// **************** image ************
+router.get(
+  "/imageL2TelecomMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2TelecomMath
+);
+router.get(
+  "/imageL2TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2TelecomPhysique
+);
+router.get(
+  "/imageL2TelecomTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2TelecomTelecom
+);
+router.get(
+  "/imageL2TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2TelecomElectronique
+);
+// **************** render************
+router.get(
+  "/L2Telecommunication",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2Telecommunication
+);
+router.get(
+  "/L2TelecomMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2TelecomMathCourses
+);
+router.get(
+  "/L2TelecomPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2TelecomPhysiqueCourses
+);
+router.get(
+  "/L2TelecomTelecomCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2TelecomTelecomCourses
+);
+router.get(
+  "/L2TelecomElectroniqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2TelecomElectroniqueCourses
+);
+//----------------------------------------------------------------
+//L2 Authomatique
+// *************partie cours******************
+router.get(
+  "/CoursesL2AuthomatiqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2AuthomatiqueMath
+);
+router.get(
+  "/CoursesL2AuthomatiquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2AuthomatiquePhysique
+);
+router.get(
+  "/CoursesL2AuthomatiqueNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2AuthomatiqueNetwork
+);
+router.get(
+  "/CoursesL2AuthomatiqueElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2AuthomatiqueElectronique
+);
+// **************** partie TD************
+router.get(
+  "/TDL2AuthomatiqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2AuthomatiqueMath
+);
+router.get(
+  "/TDL2AuthomatiquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2AuthomatiquePhysique
+);
+router.get(
+  "/TDL2AuthomatiquNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2AuthomatiquNetwork
+);
+router.get(
+  "/TDL2AuthomatiquElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2AuthomatiquElectronique
+);
+// ****************partie TP************
+router.get(
+  "/TPL2AuthomatiqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2AuthomatiqueMath
+);
+router.get(
+  "/TPL2AuthomatiquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2AuthomatiquePhysique
+);
+router.get(
+  "/TPL2AuthomatiquNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2AuthomatiquNetwork
+);
+router.get(
+  "/TPL2AuthomatiquElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL2AuthomatiquElectronique
+);
+// ****************partie Exemens************
+router.get(
+  "/ExemsL2AuthomatiqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemsL2AuthomatiqueMath
+);
+router.get(
+  "/ExemsL2AuthomatiquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemsL2AuthomatiquePhysique
+);
+router.get(
+  "/ExemsL2AuthomatiquNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemsL2AuthomatiquNetwork
+);
+router.get(
+  "/ExemsL2AuthomatiquElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemsL2AuthomatiquElectronique
+);
+// **************** image ************
+router.get(
+  "/imageL2AuthomatiqueMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2AuthomatiqueMath
+);
+router.get(
+  "/imageL2AuthomatiquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2AuthomatiquePhysique
+);
+router.get(
+  "/imageL2AuthomatiquNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2AuthomatiquNetwork
+);
+router.get(
+  "/imageL2AuthomatiquElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL2AuthomatiquElectronique
+);
+// *************render******************
+router.get(
+  "/L2Authomatique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL2Authomatique
+);
+router.get(
+  "/L2AuthomatiqueMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2AuthomatiqueMathCourses
+);
+router.get(
+  "/L2AuthomatiquePhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2AuthomatiquePhysiqueCourses
+);
+router.get(
+  "/L2AuthomatiqueNetworkCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2AuthomatiqueNetworkCourses
+);
+router.get(
+  "/L2AuthomatiqueElectroniqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L2AuthomatiqueElectroniqueCourses
+);
+//----------------------------------------------------------------
+//L3 Mécanique
+//------------------------------------------------------------
+// **************** partie cours************
+router.get(
+  "/CoursesL2Mecaniquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL2Mecaniquehydro
+);
+router.get(
+  "/CoursesL3MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MecaniqueAlgo
+);
+router.get(
+  "/CoursesL3MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MecaniquePhysique
+);
+router.get(
+  "/CoursesL3MecaniqueMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3MecaniqueMemLic
+);
+// **************** partie TD************
+router.get(
+  "/TDL2Mecaniquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL2Mecaniquehydro
+);
+router.get(
+  "/TDL3MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3MecaniqueAlgo
+);
+router.get(
+  "/TDL3Mecaniquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3Mecaniquephysique
+);
+// **************** partie TP************
+router.get(
+  "/TPL3Mecaniquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3Mecaniquehydro
+);
+router.get(
+  "/TPL3MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3MecaniqueAlgo
+);
+router.get(
+  "/TPL3MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3MecaniquePhysique
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL3Mecaniquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3Mecaniquehydro
+);
+router.get(
+  "/ExemensL3MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3MecaniqueAlgo
+);
+router.get(
+  "/ExemensL3MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3MecaniquePhysique
+);
+// **************** image ************
+router.get(
+  "/imageL3Mecaniquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3Mecaniquehydro
+);
+router.get(
+  "/imageL3MecaniqueAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3MecaniqueAlgo
+);
+router.get(
+  "/imageL3MecaniquePhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3MecaniquePhysique
+);
+router.get(
+  "/imageL3MecaniqueMecLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3MecaniqueMecLic
+);
+// *************render******************
+router.get(
+  "/L3Mecanique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3Mecanique
+);
+router.get(
+  "/L3MecaniquehydroCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MecaniquehydroCourses
+);
+router.get(
+  "/L3MecaniqueAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MecaniqueAlgoCourses
+);
+router.get(
+  "/L3MecaniquePhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MecaniquePhysiqueCourses
+);
+router.get(
+  "/L3MecaniqueMemoireLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3MecaniqueMemoireLicCourses
+);
+//----------------------------------------------------------------
+//L3 Télécommunication
+// **************** partie cours************
+router.get(
+  "/CoursesL3TelecomAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3TelecomAlgo
+);
+router.get(
+  "/CoursesL3TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3TelecomPhysique
+);
+router.get(
+  "/CoursesL3NetworkTelecom",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3NetworkTelecom
+);
+router.get(
+  "/CoursesL3TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3TelecomElectronique
+);
+router.get(
+  "/CoursesL3TelecomMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3TelecomMemLic
+);
+// // **************** partie TD************
+router.get(
+  "/TDL3TelecomAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3TelecomAlgo
+);
+router.get(
+  "/TDL3TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3TelecomPhysique
+);
+router.get(
+  "/TDL3TelecomNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3TelecomNetwork
+);
+router.get(
+  "/TDL3TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3TelecomElectronique
+);
+// // **************** partie TP************
+router.get(
+  "/TPL3TelecomAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3TelecomAlgo
+);
+router.get(
+  "/TPL3TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3TelecomPhysique
+);
+router.get(
+  "/TPL3TelecomNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3TelecomNetwork
+);
+router.get(
+  "/TPL3TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3TelecomElectronique
+);
+// // ****************partie Exemens************
+router.get(
+  "/ExemensL3TelecomAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3TelecomAlgo
+);
+router.get(
+  "/ExemensL3TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3TelecomPhysique
+);
+router.get(
+  "/ExemensL3TelecomNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3TelecomNetwork
+);
+router.get(
+  "/ExemensL3TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3TelecomElectronique
+);
+// **************** image ************
+router.get(
+  "/imageL3TelecomAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3TelecomAlgo
+);
+router.get(
+  "/imageL3TelecomPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3TelecomPhysique
+);
+router.get(
+  "/imageL3TelecomNetwork",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3TelecomNetwork
+);
+router.get(
+  "/imageL3TelecomElectronique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3TelecomElectronique
+);
+// // **************** render************
+router.get(
+  "/L3Telecommunication",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3Telecommunication
+);
+router.get(
+  "/L3TelecomAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3TelecomAlgoCourses
+);
+router.get(
+  "/L3TelecomPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3TelecomPhysiqueCourses
+);
+router.get(
+  "/L3TelecomElectroCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3TelecomElectroCourses
+);
+router.get(
+  "/L3TelecomNetworkCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3TelecomNetworkCourses
+);
+router.get(
+  "/L3TelecomMemLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3TelecomMemLicCourses
+);
+//------------------------------------------------------------
+//L3 génie Civil
+// **************** partie cours************
+router.get(
+  "/CoursesL3GCHydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GCHydro
+);
+router.get(
+  "/CoursesL3GCphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GCphysique
+);
+router.get(
+  "/CoursesL3GCgenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GCgenieCivil
+);
+router.get(
+  "/CoursesL3GCMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GCMemLic
+);
+// **************** partie TD************
+router.get(
+  "/TDL3GCHydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GCHydro
+);
+router.get(
+  "/TDL3GCphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GCphysique
+);
+router.get(
+  "/TDL3GCgenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GCgenieCivil
+);
+// **************** partie TP************
+router.get(
+  "/TPL3GCHydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GCHydro
+);
+router.get(
+  "/TPL3GCphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GCphysique
+);
+router.get(
+  "/TPL3GCgenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GCgenieCivil
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL3GCHydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3GCHydro
+);
+router.get(
+  "/ExmensL3GCphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExmensL3GCphysique
+);
+router.get(
+  "/ExmensL3GCgenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExmensL3GCgenieCivil
+);
+// **************** image ************
+router.get(
+  "/imageL3GCHydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GCHydro
+);
+router.get(
+  "/imageL3GCphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GCphysique
+);
+router.get(
+  "/imageL3GCgenieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GCgenieCivil
+);
+router.get(
+  "/imageL3GCMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GCMemLic
+);
+// **************** render************
+router.get(
+  "/L3genieCivil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3genieCivil
+);
+router.get(
+  "/L3GChydroliqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3GChydroliqueCourses
+);
+router.get(
+  "/L3GCphysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3GCphysiqueCourses
+);
+router.get(
+  "/L3GCgenieCivilCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3GCgenieCivilCourses
+);
+router.get(
+  "/L3GCMemLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3GCMemLicCourses
+);
+//------------------------------------------------------------
+//L3 génie ds procédés
+// **************** partie Cours************
+router.get(
+  "/CoursesL3GPphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GPphysique
+);
+router.get(
+  "/CoursesL3GPpharmacie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GPpharmacie
+);
+router.get(
+  "/CoursesL3GPAgronomie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GPAgronomie
+);
+router.get(
+  "/CoursesL3GPMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3GPMemLic
+);
+// *************partie TD******************
+router.get(
+  "/TDL3GPphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GPphysique
+);
+router.get(
+  "/TDL3GPAgronomie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GPAgronomie
+);
+router.get(
+  "/TDL3GPPharmacie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3GPPharmacie
+);
+// *************partie TP******************
+router.get(
+  "/TPL3GPphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GPphysique
+);
+router.get(
+  "/TPL3GPAgronomie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GPAgronomie
+);
+router.get(
+  "/TPL3GPPharmacie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3GPPharmacie
+);
+// *************Exemens******************
+router.get(
+  "/ExemensL3GPphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3GPphysique
+);
+router.get(
+  "/ExemensL3GPAgronomie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3GPAgronomie
+);
+router.get(
+  "/ExemensL3GPPharmacie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3GPPharmacie
+);
+// **************** image ************
+router.get(
+  "/imageL3GPphysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GPphysique
+);
+router.get(
+  "/imageL3GPAgronomie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GPAgronomie
+);
+router.get(
+  "/imageL3GPPharmacie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GPPharmacie
+);
+router.get(
+  "/imageL3GPMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3GPMemLic
+);
+// *************render******************
+router.get(
+  "/L3genieprocedes",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3genieprocedes
+);
+router.get(
+  "/L3GPphysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3GPphysiqueCourses
+);
+router.get(
+  "/L3GPAgronomieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3GPAgronomieCourses
+);
+router.get(
+  "/L3GPPharmacieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3GPPharmacieCourses
+);
+router.get(
+  "/L3GPMemLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3GPMemLicCourses
+);
+//------------------------------------------------------------
+//L3 hydrolique
+// **************** partie Cours************
+router.get(
+  "/CoursesL3hydroliquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3hydroliquehydro
+);
+router.get(
+  "/CoursesL3hydroliquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3hydroliquephysique
+);
+router.get(
+  "/CoursesL3hydroliqueLaw",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3hydroliqueLaw
+);
+router.get(
+  "/CoursesL3hydroliqueMecLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL3hydroliqueMecLic
+);
+// **************** partie TD************
+router.get(
+  "/TDL3hydroliquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3hydroliquehydro
+);
+router.get(
+  "/TDL3hydroliquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3hydroliquephysique
+);
+router.get(
+  "/TDL3hydroliqueLaw",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL3hydroliqueLaw
+);
+// **************** partie TP************
+router.get(
+  "/TPL3hydroliquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3hydroliquehydro
+);
+router.get(
+  "/TPL3hydroliquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3hydroliquephysique
+);
+router.get(
+  "/TPL3hydroliqueLaw",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL3hydroliqueLaw
+);
+// **************** Exemens************
+router.get(
+  "/ExemensL3hydroliquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3hydroliquehydro
+);
+router.get(
+  "/ExemensL3hydroliquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3hydroliquephysique
+);
+router.get(
+  "/ExemensL3hydroliqueLaw",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL3hydroliqueLaw
+);
+// **************** image ************
+router.get(
+  "/imageL3hydroliquehydro",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3hydroliquehydro
+);
+router.get(
+  "/imageL3hydroliquephysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3hydroliquephysique
+);
+router.get(
+  "/imageL3hydroliqueLaw",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3hydroliqueLaw
+);
+router.get(
+  "/imageL3hydroliqueMemLic",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL3hydroliqueMemLic
+);
+// *************render******************
+router.get(
+  "/L3hydrolique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL3hydrolique
+);
+router.get(
+  "/L3hydroliquehydroCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3hydroliquehydroCourses
+);
+router.get(
+  "/L3hydroliquephysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3hydroliquephysiqueCourses
+);
+router.get(
+  "/L3hydroliqueLawCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3hydroliqueLawCourses
+);
+router.get(
+  "/L3hydroliqueMemcLicCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L3hydroliqueMemcLicCourses
+);
+//----------------------------------------------------------------
+//L1 SM
+// **************** partie Cours************
+router.get(
+  "/CoursesL1SMAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SMAlgo
+);
+router.get(
+  "/CoursesL1SMMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SMMath
+);
+router.get(
+  "/CoursesL1SMPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SMPhysique
+);
+router.get(
+  "/TPL1SMOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SMOffice
+);
+// **************** partie TD************
+router.get(
+  "/TDL1SMAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SMAlgo
+);
+router.get(
+  "/TDL1SMMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SMMath
+);
+router.get(
+  "/TDL1SMPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SMPhysique
+);
+// **************** partie TP************
+router.get(
+  "/TPL1SMAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SMAlgo
+);
+router.get(
+  "/TPL1SMMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SMMath
+);
+router.get(
+  "/TPL1SMPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SMPhysique
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL1SMOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SMOffice
+);
+router.get(
+  "/ExemensL1SMAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SMAlgo
+);
+router.get(
+  "/ExemensL1SMMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SMMath
+);
+router.get(
+  "/ExemensL1SMPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SMPhysique
+);
+// **************** image ************
+router.get(
+  "/imageL1SMOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SMOffice
+);
+router.get(
+  "/imageL1SMAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SMAlgo
+);
+router.get(
+  "/imageL1SMMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SMMath
+);
+router.get(
+  "/imageL1SMPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SMPhysique
+);
+// *************render******************
+router.get(
+  "/L1SM",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL1SM
+);
+router.get(
+  "/L1SMAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SMAlgoCourses
+);
+router.get(
+  "/L1SMMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SMMathCourses
+);
+router.get(
+  "/L1SMPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SMPhysiqueCourses
+);
+router.get(
+  "/L1SMOfficeCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SMOfficeCourses
+);
+//------------------------------------------------------------
+//L1 ST
+// **************** partie Cours************
+router.get(
+  "/CoursesL1STAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1STAlgo
+);
+router.get(
+  "/CoursesL1STMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1STMath
+);
+router.get(
+  "/CoursesL1STPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1STPhysique
+);
+router.get(
+  "/CoursesL1STOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1STOffice
+);
+// **************** partie TD************
+router.get(
+  "/TDL1STAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1STAlgo
+);
+router.get(
+  "/TDL1STMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1STMath
+);
+router.get(
+  "/TDL1STPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1STPhysique
+);
+// **************** partie TP************
+router.get(
+  "/TPL1STAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1STAlgo
+);
+router.get(
+  "/TPL1STMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1STMath
+);
+router.get(
+  "/TPL1STPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1STPhysique
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL1STOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1STOffice
+);
+router.get(
+  "/ExemensL1STAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1STAlgo
+);
+router.get(
+  "/ExemensL1STMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1STMath
+);
+router.get(
+  "/ExemensL1STPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1STPhysique
+);
+// **************** image ************
+router.get(
+  "/imageL1STPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1STPhysique
+);
+router.get(
+  "/imageL1STOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1STOffice
+);
+router.get(
+  "/imageL1STMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1STMath
+);
+router.get(
+  "/imageL1STAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1STAlgo
+);
+// *************render******************
+router.get(
+  "/L1ST",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL1ST
+);
+router.get(
+  "/L1STAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1STAlgoCourses
+);
+router.get(
+  "/L1STMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1STMathCourses
+);
+router.get(
+  "/L1STPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1STPhysiqueCourses
+);
+router.get(
+  "/L1STOfficeCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1STOfficeCourses
+);
+//------------------------------------------------------------
+//L1 MI
+// **************** partie Cours************
+router.get(
+  "/CoursesL1MIAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1MIAlgo
+);
+router.get(
+  "/CoursesL1MIMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1MIMath
+);
+router.get(
+  "/CoursesL1MIPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1MIPhysique
+);
+router.get(
+  "/CoursesL1MIOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1MIOffice
+);
+// **************** partie TD************
+router.get(
+  "/TDL1MIAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1MIAlgo
+);
+router.get(
+  "/TDL1MIMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1MIMath
+);
+router.get(
+  "/TDL1MIPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1MIphysique
+);
+// **************** partie TP************
+router.get(
+  "/TPL1MIAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1MIAlgo
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL1MIAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1MIAlgo
+);
+router.get(
+  "/ExemensL1MIOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1MIOffice
+);
+router.get(
+  "/ExemensL1MIPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1MIPhysique
+);
+router.get(
+  "/ExemensL1MIMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1MIMath
+);
+// **************** image ************
+router.get(
+  "/imageL1MIAlgo",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1MIAlgo
+);
+router.get(
+  "/imageL1MIOffice",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1MIOffice
+);
+router.get(
+  "/imageL1MIMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1MIMath
+);
+router.get(
+  "/imageL1MIPhysique",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1MIPhysique
+);
+// *************render******************
+router.get(
+  "/L1MI",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL1MI
+);
+router.get(
+  "/L1MIAlgoCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1MIAlgoCourses
+);
+router.get(
+  "/L1MIMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1MIMathCourses
+);
+router.get(
+  "/L1MIPhysiqueCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1MIPhysiqueCourses
+);
+router.get(
+  "/L1MIOfficeCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1MIOfficeCourses
+);
+
+//------------------------------------------------------------
+//L1SNV
+// **************** partie Cours************
+router.get(
+  "/CoursesL1SNVMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SNVMath
+);
+router.get(
+  "/CoursesL1SNVBiologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SNVBiologie
+);
+router.get(
+  "/CoursesL1SNVChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SNVChimie
+);
+router.get(
+  "/CoursesL1SNVGoelogie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfCoursesL1SNVGoelogie
+);
+// **************** partie TD************
+router.get(
+  "/TDL1SNVMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SNVMath
+);
+router.get(
+  "/TDL1SNVBiologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SNVBiologie
+);
+router.get(
+  "/TDL1SNVChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SNVChimie
+);
+router.get(
+  "/TDL1SNVGeologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTDL1SNVGeologie
+);
+// **************** partie TP************
+router.get(
+  "/TPL1SNVMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SNVMath
+);
+router.get(
+  "/TPL1SNVBiologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SNVBiologie
+);
+router.get(
+  "/TPL1SNVChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SNVChimie
+);
+router.get(
+  "/TPL1SNVGeologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfTPL1SNVGeologie
+);
+// **************** partie Exemens************
+router.get(
+  "/ExemensL1SNVMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SNVMath
+);
+router.get(
+  "/ExemensL1SNVBiologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SNVBiologie
+);
+router.get(
+  "/ExemensL1SNVChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SNVChimie
+);
+router.get(
+  "/ExemensL1SNVGeologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfExemensL1SNVGeologie
+);
+// **************** image ************
+router.get(
+  "/imageL1SNVMath",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SNVMath
+);
+router.get(
+  "/imageL1SNVBiologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SNVBiologie
+);
+router.get(
+  "/imageL1SNVChimie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SNVChimie
+);
+router.get(
+  "/imageL1SNVGeologie",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PdfimageL1SNVGeologie
+);
+// *************render******************
+router.get(
+  "/L1SNV",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getL1SNV
+);
+router.get(
+  "/L1SNVMathCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SNVMathCourses
+);
+router.get(
+  "/L1SNVBiologieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SNVBiologieCourses
+);
+router.get(
+  "/L1SNVGeologieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SNVGeologieCourses
+);
+router.get(
+  "/L1SNVChimieCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.L1SNVChimieCourses
+);
+//----------------------------------------------------------------
+//Page Details Pdf
+router.get(
+  "/Documentdetails/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.DetailsPdf
+);
+//evaluation
+router.post("/Documentdetails", body, pdfControler.PostEvaluationData);
+//comment
+router.post("/Documentdetailscomment", body, pdfControler.PostCommentData);
+//----------------------------------------------------------------
+//Upload
+router.get(
+  "/Upload",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getUpload
+);
+router.post(
+  "/Upload",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("nomFichier"),
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PostUploadrData
+);
+//----------------------------------------------------------------
+//My Courses
+router.get(
+  "/MyCourses",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getMyCourses
+);
+//----------------------------------------------------------------
+//delete document
+router.get(
+  "/delete/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.deleteDocumentController
+);
+//update document
+router.get(
+  "/update/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.UpdateDocumentController
+);
+router.post(
+  "/update",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("nomFichier"),
+  gaurdAuth.isAuth,
+  pdfControler.PostUpdateDocument
+);
+//profil
+router.get(
+  "/Nouveauprofil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.getProfil
+);
+router.post(
+  "/Nouveauprofil",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PostProfilData
+);
+// Update profil
+router.get(
+  "/MyProfil",
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.UpdateProfilController
+);
+router.post(
+  "/MyProfil",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.nonAuthAdmin,
+  pdfControler.PostUpdateProfile
+);
+//-------------------------------------------------------------------
+// get dashbord
+router.get(
+  "/dashboard",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getdashbord
+);
+
+//-------------------------------------------------------------------
+// get AllDocuments for Admin
+router.get(
+  "/documents",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getAllDucmentsAdminController
+);
+//-------------------------------------------------------------------
+// get AllUsers for Admin
+router.get(
+  "/users",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getAllUsersAdminController
+);
+
+//-------------------------------------------------------------------
+// get AllUsers Profiles for Admin
+router.get(
+  "/ProfileUsers",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getAllProfilesAdminController
+);
+//-------------------------------------------------------------------
+// get AllComments for Admin
+router.get(
+  "/comments",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getAllCommentsAdminController
+);
+//-------------------------------------------------------------------
+//delete document for Admin
+router.get(
+  "/deleteAdmin/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.deleteDocumentAdminController
+);
+//-------------------------------------------------------------------
+//delete Comment for Admin
+router.get(
+  "/deleteComment/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.deleteCommentAdminController
+);
+//-------------------------------------------------------------------
+//delete user for Admin
+router.get(
+  "/deleteUser/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.deleteUserAdminController
+);
+//-------------------------------------------------------------------
+//delete ProfileUser for Admin
+router.get(
+  "/deleteProfileUser/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.deleteProfileUserAdminController
+);
+//-------------------------------------------------------------------
+//update ProfileUser for Admin
+router.get(
+  "/UpdateProfilUser/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.UpdateProfilUserController
+);
+router.post(
+  "/UpdateProfilUser",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.PostUpdateProfileUserAdmin
+);
+//profil Admin
+router.get(
+  "/NouveauprofilAdmin",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.getProfilAdmin
+);
+router.post(
+  "/NouveauprofilAdmin",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.PostProfilDataForAdmin
+);
+
+// Update profil Admin
+router.get(
+  "/UpdateProfilAdmin",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.UpdateProfilAdminController
+);
+router.post(
+  "/UpdateProfilAdmin",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.PostUpdateProfileAdmin
+);
+
+//-------------------------------------------------------------------
+//update Comment  for Admin
+router.get(
+  "/updateCommentAdmin/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.UpdateCommentForAdminController
+);
+router.post(
+  "/updateCommentAdmin",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("image"),
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.PostUpdateCommenteAdmin
+);
+// //update document for Admin
+router.get(
+  "/updateDocAdmin/:id",
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.UpdateDocumentAdminController
+);
+router.post(
+  "/updateDocAdmin",
+  multer({
+    storage: multer.diskStorage({
+      destination: function (req, file, cb) {
+        cb(null, "assets/uploads");
+      },
+      filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now();
+        cb(null, uniqueSuffix + "-" + file.originalname);
+      },
+    }),
+  }).single("nomFichier"),
+  gaurdAuth.isAuth,
+  gaurdAuth.isAuthAdmin,
+  pdfControler.PostUpdateDocumentAdmin
+);
+module.exports = router;

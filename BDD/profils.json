@@ -1,0 +1,376 @@
+[{
+  "_id": {
+    "$oid": "628516b78564d247de19c0a4"
+  },
+  "nom": "berdja maria",
+  "email": "berdjamaria@gmail.com",
+  "numero": "45678909765433",
+  "status": "etudiant",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652889363454-Hijabi girl.jpg",
+  "UserId": "628514df8564d247de19c098",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851b478564d247de19c0cf"
+  },
+  "nom": "berdja youcef ",
+  "email": "berymaria@gmail.com",
+  "numero": "98765434568",
+  "status": "enseignant ",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652890439010-50 Stately Long Hairstyles for Men to Sport with Dignity.jpg",
+  "UserId": "62851aff8564d247de19c0c9",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851d508564d247de19c0f3"
+  },
+  "nom": "nora mecis",
+  "email": "noramecis@gmail.com",
+  "numero": "2345678998765",
+  "status": "etudiant",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652890960290-Hajar Beauty 🇲🇦👑 (@hajar_boulahdid) • Instagram photos and videos.jpg",
+  "UserId": "62851d0f8564d247de19c0ed",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62851f038564d247de19c10e"
+  },
+  "nom": "aymen khoukhi",
+  "email": "aymenkhoukhi@gmail.com",
+  "numero": "45678765434567",
+  "status": "etudiant",
+  "address": "lakhedaria ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652891395504-5 Χειμωνιάτικα ανδρικά παπούτσια για το 2021.png",
+  "UserId": "62851ebb8564d247de19c108",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628522388564d247de19c17b"
+  },
+  "nom": "karim mecis ",
+  "email": "karimmecis@gmail.com",
+  "numero": "987654345678",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652892216406-Le costume gris anthracite homme en 40 photos!.jpg",
+  "UserId": "628521f98564d247de19c175",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628524a18564d247de19c19b"
+  },
+  "nom": "sofia mecis",
+  "email": "sofiamecis@gmail.com",
+  "numero": "2345678876543",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652892833353-835b618d-f528-45a8-a0ee-5cf79f3010a8.png",
+  "UserId": "6285246e8564d247de19c195",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628527328564d247de19c1bd"
+  },
+  "nom": "lina mecis",
+  "email": "linamecis@gmail.com",
+  "numero": "765456765434567",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652893490403-افتارات بناتฯ.jpg",
+  "UserId": "628526fe8564d247de19c1b7",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852aa48564d247de19c1e2"
+  },
+  "nom": "amir djedid ",
+  "email": "amirdjadid@gmail.com",
+  "numero": "865435678998",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652894372458-7 Jackets που κάθε άνδρας πρέπει να έχει!.png",
+  "UserId": "62852a718564d247de19c1dc",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62852c658564d247de19c1f9"
+  },
+  "nom": "kenzi djedid",
+  "email": "kenzidjadid@gmail.com",
+  "numero": "6543456789",
+  "status": "enseignant ",
+  "address": "blida",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652894821575-Coiffure pour homme _ les coupes de cheveux tendance en 2022 - Elle.jpg",
+  "UserId": "62852c338564d247de19c1f3",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628530148564d247de19c221"
+  },
+  "nom": "alla dif",
+  "email": "alladif@gmail.com",
+  "numero": "54345678987654",
+  "status": "enseignant ",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652895764096-FASHION - Maßgeschneiderter Anzug von Hockerty.jpg",
+  "UserId": "62852fa38564d247de19c216",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628531d48564d247de19c240"
+  },
+  "nom": "abdou dif",
+  "email": "abdoudif@gmail.com",
+  "numero": "678998765432",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652896212025-Zo rock je een formele stijl, zonder een pak te dragen.jpg",
+  "UserId": "628531668564d247de19c23a",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6285359e8564d247de19c25b"
+  },
+  "nom": "wassim ait hammed",
+  "email": "wassimaithammed@gmail.com",
+  "numero": "3456789876543",
+  "status": "enseignant ",
+  "address": "blida",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652897182701-ローテクスニーカーは今だからこそ注目したいアイテム！メンズにおすすめのモデルと着こなしを一挙紹介 下書き _ メンズファッションメディア OTOKOMAE - ページ 2.jpg",
+  "UserId": "628535568564d247de19c255",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853b268564d247de19c27a"
+  },
+  "nom": "imen manaoui",
+  "email": "imenmanaoui@gmail.com",
+  "numero": "8765432345789",
+  "status": "enseignant ",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652898598011-lilianamejia.jpg",
+  "UserId": "62853ab68564d247de19c274",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62853f048564d247de19c2d6"
+  },
+  "nom": "lilia boudjalabe",
+  "email": "liliaboudjalabe@gmail.com",
+  "numero": "34567890098",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652899588123-— A conversation with the cashier at a bookstore….png",
+  "UserId": "62853ec98564d247de19c2d0",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628540ce8564d247de19c2ed"
+  },
+  "nom": "chakib ait hammed",
+  "email": "chakibaitahmmed@gmail.com",
+  "numero": "2345678990",
+  "status": "etudiant",
+  "address": "blida",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652900046050-photo-1552642986-ccb41e7059e7.jpg",
+  "UserId": "628540958564d247de19c2e7",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628544a48564d247de19c31b"
+  },
+  "nom": "lila mecis",
+  "email": "lilamcis@gmail.com",
+  "numero": "23456789087",
+  "status": "enseignant ",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652901027596-ainsleyswrld.jpg",
+  "UserId": "6285436d8564d247de19c315",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628547a28564d247de19c338"
+  },
+  "nom": "meriem khachheroud",
+  "email": "meriemkacheroud@gmail.com",
+  "numero": "87654345678",
+  "status": "enseignant ",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1652901794661-portrait-2865605_960_720.jpg",
+  "UserId": "628547688564d247de19c332",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62854af18564d247de19c35b"
+  },
+  "nom": "mouhamed kacheroude",
+  "email": "mouhamedkacheroude@gmail.com",
+  "numero": "7654345678",
+  "status": "etudiant",
+  "address": "baba hassen",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1652902641081-Classy _ Men's Fashion.jpg",
+  "UserId": "62854a9c8564d247de19c355",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628768198d0ba392b076f142"
+  },
+  "nom": "assia mecis",
+  "email": "assiamecis@gmail.com",
+  "numero": "345678754567",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1653041177586-🎧📖 normal people.jpg",
+  "UserId": "628767da8d0ba392b076f13c",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876bad8d0ba392b076f164"
+  },
+  "nom": "nadia  mecis",
+  "email": "nadiamecis@gmail.com",
+  "numero": "34567654347",
+  "status": "enseignant ",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1653042093066-Lola🌠By Lola on Tumblr.png",
+  "UserId": "62876b528d0ba392b076f15c",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628773cc7156714bfc11ab91"
+  },
+  "nom": "nassima mecis",
+  "email": "nassimamecis@gmail.com",
+  "numero": "98765434567",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1653044172059-d87a0264-4e8f-49ce-814c-1af90fdff3cd.jpg",
+  "UserId": "628773927156714bfc11ab8b",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877a877156714bfc11abbc"
+  },
+  "nom": "radia mecis ",
+  "email": "radiamecis@gmail.com",
+  "numero": "545678986434",
+  "status": "etudiant",
+  "address": "blida",
+  "travail": "",
+  "Sexe": "femme",
+  "image": "1653045895355-Dicas para te ajudar na sua rotina.jpg",
+  "UserId": "628779e57156714bfc11abb6",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877e9b7156714bfc11abd6"
+  },
+  "nom": "yanis kherif ",
+  "email": "yaniskherif@gmail.com",
+  "numero": "7654346789765",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1653046939612-Men's Accessories _ Men's Summer Outfits _ Gentcreate.jpg",
+  "UserId": "62877e597156714bfc11abd0",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628782ed7156714bfc11abf3"
+  },
+  "nom": "imad khoukhi",
+  "email": "imadkhouki@gmail.com",
+  "numero": "4347689045356",
+  "status": "etudiant",
+  "address": "lakhedaria ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1653048045268-5 Χειμωνιάτικα ανδρικά παπούτσια για το 2021.png",
+  "UserId": "628782b57156714bfc11abed",
+  "admin": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628787857156714bfc11ac8e"
+  },
+  "nom": "mohammed khoukhi",
+  "email": "mohammedkhoukhi@gmail.com",
+  "numero": "45678765434567",
+  "status": "etudiant",
+  "address": "alger ",
+  "travail": "",
+  "Sexe": "homme",
+  "image": "1653049221195-🎀HOME OF THE PRETTY POSTS🎀 ♡ Pinterest_ @Taylajaybeauty_.jpg",
+  "UserId": "6287872e7156714bfc11ac88",
+  "admin": false,
+  "__v": 0
+}]

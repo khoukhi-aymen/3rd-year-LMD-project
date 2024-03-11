@@ -1,0 +1,77 @@
+<%- include("parts/header.ejs") %>
+<br />
+<br />
+
+<div class="container-sm" style="font-size: 23px">
+  <table style="background-color: rgb(190, 181, 49)" class="table">
+    <thead>
+      <tr>
+        <th style="color: black" scope="col">level</th>
+        <th style="color: black" scope="col">title</th>
+        <th style="color: black" scope="col">specialety</th>
+        <th style="color: black" scope="col">catégory</th>
+        <th style="color: black" scope="col">date</th>
+        <th style="color: black" scope="col">
+          <h1
+            style="font-weight: bold; transform: translateX(70px); color: black"
+          >
+            Action
+          </h1>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let doc of Mydocs){%>
+      <tr style="color: black">
+        <td><%= doc.niveau%></td>
+        <td style="width: 200px"><%= doc.titre%></td>
+        <td><%= doc.specialite%></td>
+        <td><%= doc.categorie%></td>
+        <td><%= doc.date%></td>
+        <div style="display: flex">
+          <td>
+            <a
+              class="btn btn-danger"
+              style="
+                font-size: 20px;
+                width: 90px;
+                height: 40px;
+                transform: translateX(px);
+              "
+              href="/delete/<%= doc._id%>"
+            >
+              delete
+            </a>
+            <a
+              class="btn btn-primary"
+              style="
+                font-size: 20px;
+                width: 90px;
+                height: 40px;
+                transform: translateX(30px);
+                color: white;
+              "
+              href="/update/<%= doc._id%>"
+            >
+              update
+            </a>
+          </td>
+        </div>
+      </tr>
+      <%}%>
+    </tbody>
+  </table>
+</div>
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+
+<%- include("parts/footer.ejs") %>

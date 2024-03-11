@@ -1,0 +1,232 @@
+<%- include("parts/header.ejs") %>
+<br />
+
+<div
+  class="container"
+  style="background-color: rgb(190, 181, 49); font-size: 23px"
+>
+  <br />
+  <% if(Smessage){%>
+  <div class="alert alert-success"><%= Smessage%></div>
+  <%}%> <% if(Emessage){%>
+  <div class="alert alert-danger"><%= Emessage%></div>
+  <%}%>
+  <br />
+  <form method="POST" action="/update" enctype="multipart/form-data">
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px"
+        >Document title</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="titre"
+        value="<%=docupdate.titre%>"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px"
+        >Description</label
+      >
+      <textarea
+        type="text"
+        class="form-control"
+        style="resize: none; font-size: 20px"
+        rows="4"
+        name="description"
+      >
+       <%=docupdate.description%>
+    </textarea
+      >
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label for="niveau" style="color: rgb(2, 2, 2)">
+        <div style="display: flex">
+          level :
+          <h1 style="transform: translateX(20px); color: rgb(226, 43, 43)">
+            <%=docupdate.niveau%>
+          </h1>
+        </div>
+      </label>
+      <select id="type" name="niveau" style="transform: translateX(30px)">
+        <option value="L1">L1</option>
+        <option value="L2">L2</option>
+        <option value="L3">L3</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">specialety</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="specialite"
+        value="<%=docupdate.specialite%>"
+      />
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label for="categorie" style="color: rgb(2, 2, 2)">
+        <div style="display: flex">
+          category:
+          <h1 style="transform: translateX(20px); color: rgb(226, 43, 43)">
+            <%=docupdate.categorie%>
+          </h1>
+        </div>
+      </label>
+      <select
+        id="categorie"
+        name="categorie"
+        style="transform: translateX(30px)"
+      >
+        <option value="cours algorithmique">cours algorithmique</option>
+        <option value="cours mathematique">cours mathematique</option>
+        <option value="memoire licence">memoire licence</option>
+        <option value="Cours anglais">Cours anglais</option>
+        <option value="cours physique">cours physique</option>
+        <option value="cours office">cours Office</option>
+        <option value="cours biologie">cours biologie</option>
+        <option value="cours chimie">cours chimie</option>
+        <option value="cours geologie">cours geologie</option>
+        <option value="cours technologie">cours technologie</option>
+        <option value="cours génie Civil">cours génie Civil</option>
+        <option value="Design">Design</option>
+        <option value="Réglementation">Réglementation</option>
+        <option value="cours Télécommunication">cours Télécommunication</option>
+        <option value="cours Electronique">cours Electronique</option>
+        <option value="cours réseaux">cours réseaux</option>
+        <option value="cours hydrolique">cours hydrolique</option>
+        <option value="cours pharmacie">cours pharmacie</option>
+        <option value="cours Agronomie">cours Agronomie</option>
+        <option value="cours lois">cours lois</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <div class="form-group">
+      <label for="type" style="color: rgb(2, 2, 2)">
+        <div style="display: flex">
+          kind:
+          <h1 style="transform: translateX(20px); color: rgb(226, 43, 43)">
+            <%=docupdate.type%>
+          </h1>
+        </div>
+      </label>
+      <select id="type" name="type" style="transform: translateX(30px)">
+        <option value="cours">cours</option>
+        <option value="TD">TD</option>
+        <option value="TP">TP</option>
+        <option value="Exemens">Exemens</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">date</label>
+      <input
+        type="date"
+        class="form-control"
+        style="font-size: 20px"
+        name="date"
+        value="<%=docupdate.date%>"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">full name</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="nomUser"
+        value="<%=docupdate.nomUser%>"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px">module</label>
+      <input
+        type="text"
+        class="form-control"
+        style="font-size: 20px"
+        name="module"
+        value="<%=docupdate.module%>"
+      />
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+      <label for="niveau" style="color: rgb(2, 2, 2)">
+        <div style="display: flex">
+          type of document :
+          <h1 style="transform: translateX(20px); color: rgb(226, 43, 43)">
+            <%=docupdate.typeFichier%>
+          </h1>
+        </div>
+      </label>
+      <select id="type" name="typeFichier" style="transform: translateX(30px)">
+        <option value="pdf">pdf</option>
+        <option value="image">image</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <input type="hidden" name="OldFile" value="<%= docupdate.nomFichier%>" />
+    <div class="form-group">
+      <label style="color: rgb(2, 2, 2); margin-bottom: 20px"
+        ><div style="display: flex">
+          file name :
+          <h1 style="transform: translateX(20px); color: rgb(226, 43, 43)">
+            <%=docupdate.nomFichier%>
+          </h1>
+        </div></label
+      >
+      <br />
+      <br />
+      <input
+        type="file"
+        accept=".pdf,.doc,.docx,.pptx,.txt,.jpg,.png,jpeg"
+        class="form-control"
+        style="font-size: 20px"
+        name="nomFichier"
+      />
+    </div>
+    <br />
+    <br />
+    <input type="hidden" name="BookId" value="<%= docupdate._id%>" />
+    <button
+      class="btn btn-primary"
+      type="submit"
+      style="transform: translateX(70px); color: white; margin-left: 40%"
+    >
+      <h1>update</h1>
+    </button>
+
+    <!-- <input type="reset" value="Reset" class="btn btn-danger" />
+    <input type="submit" value="Submit" class="btn btn-primary" /> -->
+    <br />
+    <br />
+  </form>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<%- include("parts/footer.ejs") %>

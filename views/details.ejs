@@ -1,0 +1,270 @@
+<%- include("parts/header.ejs") %>
+<br />
+<br />
+<br />
+<br>
+<br>
+  <div class="row" style="margin-left: 10px;">
+        <div class="col" style="margin-top: 50px;">
+          <% if(books.typeFichier === "pdf"){%>
+            <iframe src="/uploads/<%= books.nomFichier%>" type="application/pdf"  height="100%" width="100%"></iframe>
+          <%}else{%>
+            <!-- <embed src="/uploads/<%= books.nomFichier%>" type="application/pdf"  height="100%" width="100%" /> -->
+              <img src="/uploads/<%= books.nomFichier%>" type="application/pdf"  height="100%" width="100%"></iframe>
+           <%}%>      
+            <br>
+            <br>
+            <br>
+            <div><h1 style="font-size: 30px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><%= books.titre%></h1></div>
+            <br>
+            <br>
+            <hr>
+            <div style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <!-- <i class="fas fa-fw fa-users"></i> -->
+                  <i style="font-size: 23px"></i>
+                  <span style="font-size: 30px;color: black;margin-left: 30px;"><%= books.nomUser%></span>
+                </a>
+              </li>
+                <a href="#" ><img width="50px" style="background-color: black; border-radius: 50%;height: 50px;" src="/images/image2.jpg"></a>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <div style="display: flex;">
+          <button class="btn btn-primary" style="height: 45px;">
+            <a href="/uploads/<%= books.nomFichier%>" download="<%= books.nomFichier%>"><h2 style="font-size: 30px;color: aliceblue;">Download Text</h2></a>
+          </button>
+          <form method="POST" action="/Documentdetails">
+              <div style="display: flex;">
+              <input type="hidden" name="BookId" value="<%= books._id%>" />
+              <input type="hidden" name="Idutilisateur" value="<%= books.UserId%>" />
+              <input style="margin-left: 150px; font-size: 25px; border: 3px solid black;width: 220px; height: 45px;border-right-style: hidden;" name="Note" type="number" min="0" max="10" placeholder="Evaluer svp!">
+              <button
+                   class="btn btn-primary"
+                   type="submit"
+                  style="color: white; margin-left: 0%"
+              >
+               <h1>Envoyer</h1>
+              </button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br />
+                <% if(Smessage){%>
+                <div class="alert alert-success" style="font-size: 20px;"><%= Smessage%></div>
+                <%}%> <% if(Emessage){%>
+                <div class="alert alert-danger" style="font-size: 20px;"><%= Emessage%></div>
+                <%}%>
+                <br />
+            </form>
+          </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <li class="nav-item">
+              <% if(profile){%>
+              <a class="nav-link" href="/MyProfil">
+                <!-- <i class="fas fa-fw fa-users"></i> -->
+                <i style="font-size: 23px"></i>
+                <span style="font-size: 30px;color: black;margin-left: 30px;">
+                  <%= profile.nom%>
+                </span>
+              </a>
+              <%}else{%>
+                <a class="nav-link" href="#">
+                  <!-- <i class="fas fa-fw fa-users"></i> -->
+                  <i style="font-size: 23px"></i>
+                  <span style="font-size: 30px;color: black;margin-left: 30px;">
+                    Undifined
+                  </span>
+                </a>
+                <%}%>
+            </li>
+            </div>
+            <% if(profile){%>
+            <a href="/MyProfil" ><img width="50px" style="background-color: black; border-radius: 50%;height: 50px;" src="/uploads/<%= profile.image%>"></a>
+            <%}else{%>
+            <a href="#" ><img width="50px" style="background-color: black; border-radius: 50%;height: 50px;" src="/images/image2.jpg"></a>
+            <%}%>
+            <form method="POST" action="/Documentdetailscomment">
+            <input type="hidden" name="BookId" value="<%= books._id%>" />
+            <input type="hidden" name="document" value="<%= books.nomFichier%>" />
+            <% if(profile){%>
+            <input type="hidden" name="user" value="<%= profile.nom%>" />
+            <%}else{%>
+              <input type="hidden" name="user" value="Undifined" />
+            <%}%>
+            <br>
+            <textarea rows="6" style="border: 3px solid black; font-size: 20px; resize: none;" name="contenu" placeholder="commantaire?....."></textarea>
+            <button
+                   class="btn btn-primary"
+                   type="submit"
+                   style="color: white; margin-left: 85%;margin-top: 20px;"
+              >
+               <h1>Envoyer</h1>
+              </button>
+              <br />
+              <br>
+              <br>
+                <% if(Successmessage){%>
+                <div class="alert alert-success" style="font-size: 20px;"><%= Successmessage%></div>
+                <%}%> <% if(Errormessage){%>
+                <div class="alert alert-danger" style="font-size: 20px;"><%= Errormessage%></div>
+                <%}%>
+                <br />
+            </form>
+              <hr>
+        </div>
+        <div class="col">
+          <h1 style="text-align: center;font-weight: bold;">Recommanded for you</h1>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="container">
+            <%for(let similarDocument of result){%>
+              <% if(books.typeFichier === "pdf"){%>
+              <div style="display: flex;font-size: 20px;">
+                <table class="table table-success table-bordered border-primary">
+                  <thead>
+                    <tr>
+                      <th style="color: black;">title</th>
+                      <th style="color: black;">description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="/Documentdetails/<%= similarDocument._id%>"><h1 style="font-weight: bold;color: gray;"><%= similarDocument.titre%></h1></a></td>
+                      <td><p><%= similarDocument.description%></p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <hr style="color: black;">
+              <br>
+              <br>
+              <br>
+              <%}else{%>
+                <div style="display: flex;font-size: 20px;">
+                  <table class="table table-success table-bordered border-primary">
+                    <thead>
+                      <tr>
+                        <th style="color: black;">image</th>
+                        <th style="color: black;">description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="/SingledetailsDoc/<= similarDocument._id%>"><img src="/uploads/<%= books.nomFichier%>" type="application/pdf"  height="100%" width="100%"/></a></td>
+                        <td><p><%= similarDocument.description%></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr style="color: black;">
+                <br>
+                <br>
+                <br>
+                <%}%>
+            <%}%>
+          </div>
+        </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<%- include("parts/footer.ejs")%>

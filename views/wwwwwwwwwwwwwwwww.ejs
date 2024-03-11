@@ -1,0 +1,49 @@
+<div style="height: 800px">
+  <div class="page-heading">
+    <div class="container"></div>
+  </div>
+
+  <% if(books.length == 0){%>
+  <div style="padding-top: 80px" class="container">
+    <h1 style="margin-left: 200px">
+      ce repertoire est vide &#128517;, Soyer le premier à déposer des documents
+      &#128513;
+    </h1>
+    <img
+      src="images/dossier.jpg"
+      alt="courses picture"
+      style="transform: translateX(350px)"
+    />
+  </div>
+
+  <%}else{%>
+  <!-- Popular courses End -->
+  <div class="learn-courses">
+    <div class="container">
+      <div class="owl-one owl-carousel">
+        <% for(let book of books){%>
+        <div
+          class="box-wrap"
+          itemprop="event"
+          itemscope
+          itemtype=" http://schema.org/Course"
+        >
+          <div class="img-wrap" itemprop="image">
+            <a href="/Documentdetails/<%= book._id%>"
+              ><img src="images/pdf1.jpg" alt="courses picture"
+            /></a>
+          </div>
+          <a href="/Documentdetails/<%= book._id%>"
+            ><h2 style="color: black"><%= book.titre%></h2></a
+          >
+          <br />
+          <h3>niveau: <%= book.niveau%></h3>
+          <h3>date de mis en ligne: <%= book.date%></h3>
+          <h3>module: <%= book.module%></h3>
+        </div>
+        <%}%>
+      </div>
+    </div>
+  </div>
+  <%}%>
+</div>

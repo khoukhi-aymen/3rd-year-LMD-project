@@ -1,0 +1,68 @@
+<%- include("parts/header.ejs")%>
+<div
+  style="
+    height: 1000px;
+    background-image: url(images/student-gc351adec3_1920.jpg);
+  "
+>
+  <div
+    class="container"
+    style="
+      background-color: rgba(60, 207, 41, 0.76);
+      font-size: 23px;
+      transform: translateY(300px);
+    "
+  >
+    <form method="POST" action="/register">
+      <div class="mb-3">
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="nom complet"
+          name="name"
+          style="color: black; font-size: 20px"
+        />
+        <br />
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          placeholder="email"
+          name="email"
+          style="color: black; font-size: 20px"
+        />
+      </div>
+      <br />
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="password"
+          style="color: black; font-size: 20px"
+          name="password"
+        />
+      </div>
+      <% if(message){%>
+      <div class="alert alert-danger"><%= message%></div>
+      <%}%>
+      <button
+        type="submit"
+        class="btn btn-dark"
+        style="
+          font-size: 25px;
+          margin-left: 45%;
+          margin-bottom: 20px;
+          margin-top: 30px;
+          color: white;
+        "
+      >
+        Register
+      </button>
+    </form>
+  </div>
+</div>
+
+<%- include("parts/footer.ejs")%>
