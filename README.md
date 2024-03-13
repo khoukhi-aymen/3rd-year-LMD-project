@@ -5,7 +5,9 @@ DocShare est une plateforme permettant de partager et collaborer sur des documen
 ## Installation
 
 1. Cloner le dépôt.
-2. Exécuter la commande `npm install`.
+2. télcharger et installer node Js
+3. télecharger et installer mongoDB
+4. Exécuter la commande `npm install`.
 
 ## Utilisation
 
