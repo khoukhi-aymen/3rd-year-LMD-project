@@ -26,7 +26,5 @@ Ce projet est sous licence [MIT License]. Voir le fichier LICENSE.md pour plus d
 - Aymen Khoukhi (le seul auteur pour le moment)
 
 ## Statut du Projet
-
-- **En développement actif**
 - Stable
 
