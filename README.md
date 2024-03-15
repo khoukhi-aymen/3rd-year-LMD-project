@@ -1,30 +1,29 @@
 # DocShare
 
-DocShare est une plateforme permettant de partager et collaborer sur des documents.
+DocShare is a platform for sharing and collaborating on documents.
+# Installation
 
-## Installation
+    1.Clone the repository.
+    2. Download and install Node.js.
+    3. Download and install MongoDB.
+    4. Run the command npm install.
 
-1. Cloner le dépôt.
-2. télcharger et installer node Js
-3. télecharger et installer mongoDB
-4. Exécuter la commande `npm install`.
+# Usage
 
-## Utilisation
+To use DocShare, follow these steps:
 
-Pour utiliser DocShare, suivez ces étapes :
+    1.Create an account.
+    2.Log in to access different sources and documents.
+    3.Explore features such as profile editing, document viewing, and document sharing.
 
-1. Créez un compte.
-2. Connectez-vous pour accéder aux différentes sources et documents.
-3. Explorez les fonctionnalités telles que l'édition de profil, la visualisation des documents, et le partage de documents.
+# License
 
-## Licence
+This project is licensed under the [MIT License]. See the LICENSE.md file for more details.
+Authors
 
-Ce projet est sous licence [MIT License]. Voir le fichier LICENSE.md pour plus de détails.
+    -Aymen Khoukhi (the sole author for now)
 
-## Auteurs
+# Project Status
 
-- Aymen Khoukhi (le seul auteur pour le moment)
-
-## Statut du Projet
-- Stable
+    -Stable
 
